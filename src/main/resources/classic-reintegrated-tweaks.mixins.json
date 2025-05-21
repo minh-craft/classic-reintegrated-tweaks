@@ -8,6 +8,7 @@
     "EnchantmentsMixin",
     "HuskMixin",
     "ServerLevelMixin",
+    "StrayMixin",
     "ZombieMixin"
   ],
   "injectors": {

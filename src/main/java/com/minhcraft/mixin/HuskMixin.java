@@ -17,9 +17,22 @@ public abstract class HuskMixin extends Monster {
     }
 
     @Inject(
+            method = "isSunSensitive",
+            at = @At("HEAD"),
+            cancellable = true
+    )
+    // Make husks burn in daylight
+    private void isSunSensitive(CallbackInfoReturnable<Boolean> cir) {
+        cir.setReturnValue(true);
+        cir.cancel();
+    }
+
+    @Inject(
             method = "convertsInWater",
             at = @At("HEAD"),
-            cancellable = true)
+            cancellable = true
+    )
+    // Disable drowned conversion
     private void convertsInWater(CallbackInfoReturnable<Boolean> cir) {
         cir.setReturnValue(false);
         cir.cancel();
