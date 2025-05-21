@@ -4,6 +4,7 @@
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "AbstractSkeletonMixin",
+    "CauldronBlockMixin",
     "EnchantmentHelperMixin",
     "EnchantmentsMixin",
     "HuskMixin",
