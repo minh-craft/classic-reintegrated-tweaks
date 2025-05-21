@@ -13,7 +13,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Slice;
 
 @Mixin(Enchantments.class)
-public class EnchantmentsMixin {
+public abstract class EnchantmentsMixin {
     @Shadow
     private static Enchantment register(String identifier, Enchantment enchantment) {
         throw new AssertionError();

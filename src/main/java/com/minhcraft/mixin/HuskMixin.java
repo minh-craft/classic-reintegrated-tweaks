@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(Husk.class)
-public class HuskMixin extends Monster {
+public abstract class HuskMixin extends Monster {
 
     protected HuskMixin(EntityType<? extends Monster> entityType, Level level) {
         super(entityType, level);
