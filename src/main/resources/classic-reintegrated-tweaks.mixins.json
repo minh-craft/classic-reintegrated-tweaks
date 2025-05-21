@@ -3,6 +3,8 @@
   "package": "com.minhcraft.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "EnchantmentHelperMixin",
+    "EnchantmentsMixin"
   ],
   "injectors": {
     "defaultRequire": 1
