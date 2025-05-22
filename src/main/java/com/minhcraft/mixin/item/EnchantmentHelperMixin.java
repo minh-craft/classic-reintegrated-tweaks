@@ -1,4 +1,4 @@
-package com.minhcraft.mixin;
+package com.minhcraft.mixin.item;
 
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;

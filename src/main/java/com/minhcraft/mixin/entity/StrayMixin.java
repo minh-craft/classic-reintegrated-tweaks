@@ -1,4 +1,4 @@
-package com.minhcraft.mixin;
+package com.minhcraft.mixin.entity;
 
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.monster.AbstractSkeleton;

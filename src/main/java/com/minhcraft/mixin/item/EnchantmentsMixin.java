@@ -1,4 +1,4 @@
-package com.minhcraft.mixin;
+package com.minhcraft.mixin.item;
 
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;

@@ -1,4 +1,4 @@
-package com.minhcraft.mixin;
+package com.minhcraft.mixin.block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvents;

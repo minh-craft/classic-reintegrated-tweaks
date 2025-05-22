@@ -1,4 +1,4 @@
-package com.minhcraft.mixin;
+package com.minhcraft.mixin.block;
 
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.block.CauldronBlock;
