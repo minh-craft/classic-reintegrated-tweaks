@@ -3,15 +3,18 @@
   "package": "com.minhcraft.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "entity.AbstractSkeletonMixin",
+    "ServerLevelMixin",
     "block.CakeBlockMixin",
     "block.CauldronBlockMixin",
+    "entity.AbstractSkeletonMixin",
+    "entity.HuskMixin",
+    "entity.SpiderAttackGoalMixin",
+    "entity.StrayMixin",
+    "entity.ZombieAttackGoalMixin",
+    "entity.ZombieMixin",
     "item.EnchantmentHelperMixin",
     "item.EnchantmentsMixin",
-    "entity.HuskMixin",
-    "ServerLevelMixin",
-    "entity.StrayMixin",
-    "entity.ZombieMixin"
+    "item.SwordItemMixin"
   ],
   "injectors": {
     "defaultRequire": 1
