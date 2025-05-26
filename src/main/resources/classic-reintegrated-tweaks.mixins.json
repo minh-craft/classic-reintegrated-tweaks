@@ -6,6 +6,7 @@
     "ServerLevelMixin",
     "block.CakeBlockMixin",
     "block.CauldronBlockMixin",
+    "block.MudBlockMixin",
     "entity.AbstractSkeletonMixin",
     "entity.HuskMixin",
     "entity.SpiderAttackGoalMixin",
