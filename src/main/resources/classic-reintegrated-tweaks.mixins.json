@@ -13,6 +13,7 @@
     "entity.StrayMixin",
     "entity.ZombieAttackGoalMixin",
     "entity.ZombieMixin",
+    "item.BundleItemMixin",
     "item.EnchantmentHelperMixin",
     "item.EnchantmentsMixin",
     "item.SwordItemMixin"
