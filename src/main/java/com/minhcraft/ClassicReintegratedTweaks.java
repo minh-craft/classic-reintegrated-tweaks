@@ -1,5 +1,6 @@
 package com.minhcraft;
 
+import com.minhcraft.config.ConfigLoader;
 import com.minhcraft.register.ModEvents;
 import com.minhcraft.register.ModItems;
 import com.minhcraft.register.ModSounds;
@@ -28,6 +29,7 @@ public class ClassicReintegratedTweaks implements ModInitializer {
 		ModSounds.init();
 		ModEvents.init();
 		ModItems.init();
+		ConfigLoader.loadConfig();
 	}
 
 	public static ResourceLocation id(String id) {
