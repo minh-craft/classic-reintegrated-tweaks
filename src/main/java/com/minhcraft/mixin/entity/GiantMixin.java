@@ -40,6 +40,6 @@ public class GiantMixin extends Monster {
 
     @Override
     protected void playStepSound(BlockPos pos, BlockState state) {
-        this.playSound(this.getStepSound(), 0.2F, 0.7F);
+        this.playSound(this.getStepSound(), 0.2F, 0.65F);
     }
 }
