@@ -38,3 +38,8 @@ v0.3.0
 v0.4.0
 - add rotten flesh to rotten leather to leather conversion process
 - change zombie loot table to only drop 0-1 rotten flesh
+
+================================================
+v0.5.0
+- decrease pitch of giant sounds
+- add loot table for giant, drops 6-9 rotten flesh
