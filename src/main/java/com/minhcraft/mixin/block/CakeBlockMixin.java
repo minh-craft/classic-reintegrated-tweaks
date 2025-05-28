@@ -69,6 +69,8 @@ public class CakeBlockMixin {
             } else {
                 player.awardStat(Stats.EAT_CAKE_SLICE);
                 player.getFoodData().eat(2, 0.1F);
+                level.playSound(player, player.blockPosition(), SoundEvents.GENERIC_EAT, SoundSource.PLAYERS, 1.0F, 1.0F);
+
             }
 
             int i = state.getValue(BITES);
