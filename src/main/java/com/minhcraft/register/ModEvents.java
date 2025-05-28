@@ -1,5 +1,6 @@
-package com.minhcraft.event;
+package com.minhcraft.register;
 
+import com.minhcraft.event.GiantEvent;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerEntityEvents;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.Entity;

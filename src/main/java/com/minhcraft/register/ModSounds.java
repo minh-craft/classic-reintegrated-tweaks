@@ -1,5 +1,6 @@
-package com.minhcraft;
+package com.minhcraft.register;
 
+import com.minhcraft.ClassicReintegratedTweaks;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.sounds.SoundEvent;

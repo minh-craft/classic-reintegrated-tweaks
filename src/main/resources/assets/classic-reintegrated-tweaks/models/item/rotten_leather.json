@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "classic-reintegrated-tweaks:item/rotten_leather"
+  }
+}
+

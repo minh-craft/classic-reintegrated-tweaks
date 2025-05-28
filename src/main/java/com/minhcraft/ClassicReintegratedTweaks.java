@@ -1,6 +1,8 @@
 package com.minhcraft;
 
-import com.minhcraft.event.ModEvents;
+import com.minhcraft.register.ModEvents;
+import com.minhcraft.register.ModItems;
+import com.minhcraft.register.ModSounds;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.ResourceLocation;
@@ -25,6 +27,7 @@ public class ClassicReintegratedTweaks implements ModInitializer {
 		LOGGER.info("Initializing Classic Reintegrated Tweaks");
 		ModSounds.init();
 		ModEvents.init();
+		ModItems.init();
 	}
 
 	public static ResourceLocation id(String id) {

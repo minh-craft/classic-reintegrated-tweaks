@@ -1,6 +1,6 @@
 package com.minhcraft.mixin.entity;
 
-import com.minhcraft.ModSounds;
+import com.minhcraft.register.ModSounds;
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;

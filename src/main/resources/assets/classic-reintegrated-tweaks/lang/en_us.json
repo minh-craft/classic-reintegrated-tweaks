@@ -1,5 +1,7 @@
 {
   "subtitles.entity.giant.ambient": "Giant groans",
   "subtitles.entity.giant.death": "Giant dies",
-  "subtitles.entity.giant.hurt": "Giant hurts"
+  "subtitles.entity.giant.hurt": "Giant hurts",
+  "item.classic-reintegrated-tweaks.rotten_leather": "Rotten Leather",
+  "item.classic-reintegrated-tweaks.rotten_leather.tooltip": "Requires smelting"
 }
