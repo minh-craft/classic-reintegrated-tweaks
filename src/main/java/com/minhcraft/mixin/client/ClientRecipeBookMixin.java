@@ -1,6 +1,6 @@
 package com.minhcraft.mixin.client;
 
-import com.minhcraft.config.ConfigLoader;
+import com.minhcraft.config.RecipeCustomSortingConfigLoader;
 import net.minecraft.client.ClientRecipeBook;
 import net.minecraft.client.RecipeBookCategories;
 import net.minecraft.world.item.crafting.Recipe;
@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
 public abstract class ClientRecipeBookMixin {
 
     @Unique
-    Map<String, Integer> RECIPE_CUSTOM_SORTING = ConfigLoader.getConfig().getRecipeCustomSorting();
+    Map<String, Integer> RECIPE_CUSTOM_SORTING = RecipeCustomSortingConfigLoader.getRecipeCustomSortingConfig().getRecipeCustomSorting();
 
     @Redirect(
             method = "setupCollections",
