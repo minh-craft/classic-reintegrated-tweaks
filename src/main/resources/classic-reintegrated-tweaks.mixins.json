@@ -8,6 +8,7 @@
     "block.CauldronBlockMixin",
     "block.MudBlockMixin",
     "entity.AbstractSkeletonMixin",
+    "entity.GiantMixin",
     "entity.HuskMixin",
     "entity.SpiderAttackGoalMixin",
     "entity.StrayMixin",

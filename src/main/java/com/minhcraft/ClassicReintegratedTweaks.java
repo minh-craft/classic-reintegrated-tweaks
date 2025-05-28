@@ -1,7 +1,9 @@
 package com.minhcraft;
 
+import com.minhcraft.event.ModEvents;
 import net.fabricmc.api.ModInitializer;
 
+import net.minecraft.resources.ResourceLocation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,6 +15,7 @@ public class ClassicReintegratedTweaks implements ModInitializer {
 	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
+
 	@Override
 	public void onInitialize() {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
@@ -20,5 +23,11 @@ public class ClassicReintegratedTweaks implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Initializing Classic Reintegrated Tweaks");
+		ModSounds.init();
+		ModEvents.init();
+	}
+
+	public static ResourceLocation id(String id) {
+		return new ResourceLocation(MOD_ID, id);
 	}
 }

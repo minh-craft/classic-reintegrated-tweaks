@@ -1,0 +1,24 @@
+{
+  "entity.giant.ambient": {
+    "replace": "true",
+    "sounds": [
+      {"name": "mob/zombie/say1", "volume": 1.15, "pitch": 0.7},
+      {"name": "mob/zombie/say2", "volume": 1.15, "pitch": 0.7},
+      {"name": "mob/zombie/say3", "volume": 1.15, "pitch": 0.7}
+    ],
+    "subtitle": "subtitles.entity.giant.ambient"
+  },
+  "entity.giant.death": {
+    "replace": "true",
+    "sounds": [{"name": "mob/zombie/death", "volume": 1.15, "pitch": 0.7}],
+    "subtitle": "subtitles.entity.giant.death"
+  },
+  "entity.giant.hurt": {
+    "replace": "true",
+    "sounds": [
+      {"name": "mob/zombie/hurt1", "volume": 1.15, "pitch": 0.7},
+      {"name": "mob/zombie/hurt2", "volume": 1.15, "pitch": 0.7}
+    ],
+    "subtitle": "subtitles.entity.giant.hurt"
+  }
+}
