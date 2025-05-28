@@ -1,6 +1,6 @@
 package com.minhcraft.event;
 
-import com.minhcraft.config.ConfigLoader;
+import com.minhcraft.config.ModConfig;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.monster.Giant;
@@ -16,6 +16,6 @@ public class GiantEvent {
             return;
         }
 
-        ((Giant)entity).getAttribute(Attributes.MAX_HEALTH).setBaseValue(ConfigLoader.getConfig().getGiantMaxHealth());
+        ((Giant)entity).getAttribute(Attributes.MAX_HEALTH).setBaseValue(ModConfig.giantMaxHealth);
     }
 }

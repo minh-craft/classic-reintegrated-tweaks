@@ -1,5 +1,6 @@
 package com.minhcraft.mixin.entity;
 
+import com.minhcraft.config.ModConfig;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.monster.AbstractSkeleton;
 import net.minecraft.world.entity.monster.Stray;
@@ -25,7 +26,9 @@ public abstract class StrayMixin extends AbstractSkeleton {
     )
     // Make strays not shoot slow effect arrows
     private void getArrow(ItemStack arrowStack, float velocity, CallbackInfoReturnable<AbstractArrow> cir) {
-        cir.setReturnValue(super.getArrow(arrowStack, velocity));
-        cir.cancel();
+        if (ModConfig.disableStraySlowArrows) {
+            cir.setReturnValue(super.getArrow(arrowStack, velocity));
+            cir.cancel();
+        }
     }
 }

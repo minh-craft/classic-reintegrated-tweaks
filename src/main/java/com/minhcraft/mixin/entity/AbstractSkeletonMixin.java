@@ -1,5 +1,6 @@
 package com.minhcraft.mixin.entity;
 
+import com.minhcraft.config.ModConfig;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
 import net.minecraft.world.entity.monster.AbstractSkeleton;
@@ -16,9 +17,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(AbstractSkeleton.class)
 public abstract class AbstractSkeletonMixin extends Monster {
-
-    @Shadow protected abstract AbstractArrow getArrow(ItemStack arrowStack, float velocity);
-
     protected AbstractSkeletonMixin(EntityType<? extends Monster> entityType, Level level) {
         super(entityType, level);
     }
@@ -36,6 +34,6 @@ public abstract class AbstractSkeletonMixin extends Monster {
             at = @At(value = "INVOKE", target = "Lnet/minecraft/world/entity/projectile/AbstractArrow;shoot(DDDFF)V")
     )
     private void performRangedAttack(AbstractArrow instance, double x, double y, double z, float velocity, float inaccuracy) {
-        instance.shoot(x, y, z, velocity - 0.5f, inaccuracy);
+        instance.shoot(x, y, z, velocity - ModConfig.skeletonArrowVelocityDecrease, inaccuracy);
     }
 }

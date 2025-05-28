@@ -1,9 +1,11 @@
 package com.minhcraft;
 
-import com.minhcraft.config.ConfigLoader;
+import com.minhcraft.config.ModConfig;
+import com.minhcraft.config.RecipeCustomSortingConfigLoader;
 import com.minhcraft.register.ModEvents;
 import com.minhcraft.register.ModItems;
 import com.minhcraft.register.ModSounds;
+import eu.midnightdust.lib.config.MidnightConfig;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.ResourceLocation;
@@ -29,7 +31,8 @@ public class ClassicReintegratedTweaks implements ModInitializer {
 		ModSounds.init();
 		ModEvents.init();
 		ModItems.init();
-		ConfigLoader.loadConfig();
+		RecipeCustomSortingConfigLoader.loadConfig();
+		MidnightConfig.init(MOD_ID, ModConfig.class);
 	}
 
 	public static ResourceLocation id(String id) {

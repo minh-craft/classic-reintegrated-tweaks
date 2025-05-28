@@ -1,5 +1,6 @@
 package com.minhcraft.mixin.block;
 
+import com.minhcraft.config.ModConfig;
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -30,16 +31,6 @@ public class CakeBlockMixin {
     private static final int CAKE_ABSORPTION_DURATION = 24000; // 20:00 minutes
     @Unique
     private static final int CAKE_ABSORPTION_REFRESH_WAIT_TIME = 1200; // 1:00 minute
-    @Unique
-    private static final int CAKE_MAX_ABSORPTION_HEARTS = 8;
-
-    @Inject(
-            method = "use",
-            at = @At("HEAD")
-    )
-    private void use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit, CallbackInfoReturnable<InteractionResult> cir) {
-
-    }
 
     @Inject(
             method = "eat",
@@ -53,9 +44,9 @@ public class CakeBlockMixin {
         boolean absorptionCanRefresh = (
             player.hasEffect(MobEffects.ABSORPTION)
             && player.getEffect(MobEffects.ABSORPTION).getDuration() < (CAKE_ABSORPTION_DURATION - CAKE_ABSORPTION_REFRESH_WAIT_TIME)
-            && absorptionHearts <= CAKE_MAX_ABSORPTION_HEARTS
+            && absorptionHearts <= ModConfig.cakeMaxAbsorptionHearts
         );
-        if (!(player.canEat(false) || absorptionHearts < CAKE_MAX_ABSORPTION_HEARTS || absorptionCanRefresh)) {
+        if (!(player.canEat(false) || absorptionHearts < ModConfig.cakeMaxAbsorptionHearts || absorptionCanRefresh)) {
             cir.setReturnValue(InteractionResult.PASS);
         } else {
             if (player.getHealth() == player.getMaxHealth()) {
@@ -64,7 +55,7 @@ public class CakeBlockMixin {
                     player.removeEffect(MobEffects.ABSORPTION);
                 }
                 player.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, CAKE_ABSORPTION_DURATION, 1, false, false, false));
-                player.setAbsorptionAmount(Math.min(absorptionHearts+1, CAKE_MAX_ABSORPTION_HEARTS));
+                player.setAbsorptionAmount(Math.min(absorptionHearts+1, ModConfig.cakeMaxAbsorptionHearts));
                 level.playSound(player, player.blockPosition(), SoundEvents.PLAYER_BURP, SoundSource.PLAYERS, 1.0F, 1.0F);
             } else {
                 player.awardStat(Stats.EAT_CAKE_SLICE);

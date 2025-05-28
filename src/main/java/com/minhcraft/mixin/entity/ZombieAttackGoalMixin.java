@@ -1,5 +1,6 @@
 package com.minhcraft.mixin.entity;
 
+import com.minhcraft.config.ModConfig;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.PathfinderMob;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
@@ -15,6 +16,8 @@ public class ZombieAttackGoalMixin extends MeleeAttackGoal {
 
     @Override
     protected double getAttackReachSqr(LivingEntity attackTarget) {
-        return (this.mob.getBbWidth()+0.3) * 2.0F * ((this.mob.getBbWidth()+0.3) * 2.0F) + attackTarget.getBbWidth();
+        return (this.mob.getBbWidth()+ModConfig.zombieBoundingBoxAttackRangeIncrease) * 2.0F
+                * ((this.mob.getBbWidth()+ModConfig.zombieBoundingBoxAttackRangeIncrease) * 2.0F)
+                + attackTarget.getBbWidth();
     }
 }

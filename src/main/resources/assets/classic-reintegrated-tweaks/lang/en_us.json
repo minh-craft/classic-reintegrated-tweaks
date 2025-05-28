@@ -3,5 +3,15 @@
   "subtitles.entity.giant.death": "Giant dies",
   "subtitles.entity.giant.hurt": "Giant hurts",
   "item.classic-reintegrated-tweaks.rotten_leather": "Rotten Leather",
-  "item.classic-reintegrated-tweaks.rotten_leather.tooltip": "Requires smelting"
+  "item.classic-reintegrated-tweaks.rotten_leather.tooltip": "Requires smelting",
+  "classic-reintegrated-tweaks.midnightconfig.giantMaxHealth": "Giant Max Health",
+  "classic-reintegrated-tweaks.midnightconfig.cakeMaxAbsorptionHearts": "Cake Max Absorption Hearts",
+  "classic-reintegrated-tweaks.midnightconfig.skeletonArrowVelocityDecrease": "Skeleton Arrow Velocity Decrease",
+  "classic-reintegrated-tweaks.midnightconfig.spiderBoundingBoxAttackRangeIncrease": "Spider Bounding Box Attack Range Increase",
+  "classic-reintegrated-tweaks.midnightconfig.caveSpiderBoundingBoxAttackRangeIncrease": "Cave Spider Bounding Box Attack Range Increase",
+  "classic-reintegrated-tweaks.midnightconfig.zombieBoundingBoxAttackRangeIncrease": "Zombie Bounding Box Attack Range Increase",
+  "classic-reintegrated-tweaks.midnightconfig.swordRangeIncrease": "Sword Range Increase",
+  "classic-reintegrated-tweaks.midnightconfig.disableStraySlowArrows": "Disable Stray Slow Arrows"
+
+
 }

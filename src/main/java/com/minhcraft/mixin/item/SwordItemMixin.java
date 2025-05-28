@@ -3,6 +3,7 @@ package com.minhcraft.mixin.item;
 import com.google.common.collect.ImmutableMultimap;
 import com.jamieswhiteshirt.reachentityattributes.ReachEntityAttributes;
 import com.llamalad7.mixinextras.sugar.Local;
+import com.minhcraft.config.ModConfig;
 import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.item.Item;
@@ -21,7 +22,7 @@ public class SwordItemMixin {
             remap = false
     )
     private void crt$injectConstructor(Tier tier, int attackDamageModifier, float attackSpeedModifier, Item.Properties properties, CallbackInfo ci, @Local ImmutableMultimap.Builder<Attribute, AttributeModifier> builder) {
-        builder.put(ReachEntityAttributes.REACH, new AttributeModifier("Sword Reach Extension", 0.5, AttributeModifier.Operation.ADDITION));
-        builder.put(ReachEntityAttributes.ATTACK_RANGE, new AttributeModifier("Sword Reach Extension", 0.5, AttributeModifier.Operation.ADDITION));
+        builder.put(ReachEntityAttributes.REACH, new AttributeModifier("Sword Reach Extension", ModConfig.swordRangeIncrease, AttributeModifier.Operation.ADDITION));
+        builder.put(ReachEntityAttributes.ATTACK_RANGE, new AttributeModifier("Sword Reach Extension", ModConfig.swordRangeIncrease, AttributeModifier.Operation.ADDITION));
     }
 }

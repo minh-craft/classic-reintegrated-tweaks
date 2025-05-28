@@ -1,43 +1,31 @@
 package com.minhcraft.config;
 
-import org.spongepowered.include.com.google.gson.annotations.SerializedName;
+import eu.midnightdust.lib.config.MidnightConfig;
 
-import java.util.HashMap;
-import java.util.Map;
+public class ModConfig extends MidnightConfig {
 
-public class ModConfig {
-    @SerializedName("recipeCustomSorting")
-    private final Map<String, Integer> recipeCustomSorting = new HashMap<>();
+    @Entry(isSlider = true, min=20, max=200)
+    public static int giantMaxHealth = 45;
 
-    @SerializedName("giantMaxHealth")
-    private final double giantMaxHealth;
+    @Entry(isSlider = true, min=0, max=20)
+    public static int cakeMaxAbsorptionHearts = 8;
 
-    // Default values
-    public ModConfig() {
-        recipeCustomSorting.put("minecraft:bundle", -1000);
-        recipeCustomSorting.put("minecraft:clock", -1000);
-        recipeCustomSorting.put("minecraft:compass", -1000);
-        recipeCustomSorting.put("simple_quiver:quiver", -1000);
+    @Entry(isSlider = true, min=0f, max=1.5f, precision = 100)
+    public static float skeletonArrowVelocityDecrease = 0.5f;
 
-        recipeCustomSorting.put("minecraft:bucket", -100);
-        recipeCustomSorting.put("minecraft:flint_and_steel", -100);
-        recipeCustomSorting.put("minecraft:fishing_rod", -100);
-        recipeCustomSorting.put("minecraft:lead", -100);
-        recipeCustomSorting.put("minecraft:shears", -100);
-        recipeCustomSorting.put("minecraft:spyglass", -100);
+    @Entry(isSlider = true, min=-1f, max=1f, precision = 100)
+    public static float spiderBoundingBoxAttackRangeIncrease = 0f;
 
-        recipeCustomSorting.put("minecraft:arrow", -10);
-        recipeCustomSorting.put("minecraft:bow", -10);
-        recipeCustomSorting.put("minecraft:crossbow", -10);
+    @Entry(isSlider = true, min=-1f, max=1f, precision = 100)
+    public static float caveSpiderBoundingBoxAttackRangeIncrease = 0f;
 
-        giantMaxHealth = 45;
-    }
+    @Entry(isSlider = true, min=0f, max=1f, precision = 100)
+    public static float zombieBoundingBoxAttackRangeIncrease = 0.3f;
 
-    public Map<String, Integer> getRecipeCustomSorting() {
-        return recipeCustomSorting;
-    }
+    @Entry(isSlider = true, min=0d, max=1d, precision = 100)
+    public static double swordRangeIncrease = 0.5d;
 
-    public double getGiantMaxHealth() {
-        return giantMaxHealth;
-    }
+    @Entry
+    public static boolean disableStraySlowArrows = true;
+
 }
