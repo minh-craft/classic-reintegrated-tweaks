@@ -3,13 +3,13 @@
 	"id": "classic-reintegrated-tweaks",
 	"version": "${version}",
 	"name": "Classic Reintegrated Tweaks",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Custom tweaks mod for the Classic Reintegrated Modpack",
 	"authors": [
-		"Me!"
+		"minh-craft"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/minh-craft/classic-reintegrated-tweaks",
+		"sources": "https://github.com/minh-craft/classic-reintegrated-tweaks"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/classic-reintegrated-tweaks/icon.png",
