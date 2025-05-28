@@ -1,0 +1,35 @@
+================================================
+v0.1.0
+- zombies
+    - disable drowned conversion
+    - make zombies, husks float again, rather than sinking
+    - make husks burn in daylight
+    - increase attack range
+- spiders
+    - increase attack range
+- skeletons
+    - make skeletons float
+    - disable trap horse spawning during thunderstorms
+    - make skeleton arrow velocity slower, matching instant beta bow speed
+- enchant
+    - make swift sneak apply to all armor slots
+    - make swift sneak bonus cumulative across all equipped armor pieces
+- cauldron
+    - disable powder snow generation in snowy weather
+- cake
+    - add overeat for extra absorption hearts feature
+- swords
+    - increase attack range by 0.5 blocks
+- mud
+    - make mud blocks have full block collision
+
+================================================
+v0.2.0
+- make bundles no longer stack inside shulker boxes and supplementaries sacks
+
+================================================
+v0.3.0
+- add sound for eating cake normally
+- giants
+    - add low pitched zombie sounds
+    - set health to 45
