@@ -53,3 +53,9 @@ v0.6.0
 v0.7.0
 - update husk loot table to match zombie's
 - add text for config title screen
+
+================================================
+v0.8.0
+- mixin to https://modrinth.com/mod/giant-spawn mod
+    - allow modifying giant attack range
+- increase range of giant sounds
