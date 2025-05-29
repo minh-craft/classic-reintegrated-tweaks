@@ -48,3 +48,8 @@ v0.5.0
 v0.6.0
 - add configuration for recipe custom sorting
 - add configuration for other mod properties
+
+================================================
+v0.7.0
+- update husk loot table to match zombie's
+- add text for config title screen
