@@ -40,6 +40,13 @@ public class GiantMixin extends Monster {
 
     @Override
     protected void playStepSound(BlockPos pos, BlockState state) {
-        this.playSound(this.getStepSound(), 0.2F, 0.65F);
+        this.playSound(this.getStepSound(), 1.2F, 0.65F);
+    }
+
+    @Override
+    // volume increased beyond 1.0 just increases sound range
+    // 2.2 increases sound range to ~35 blocks
+    protected float getSoundVolume() {
+        return 2.2F;
     }
 }
