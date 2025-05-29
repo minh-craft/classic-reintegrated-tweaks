@@ -3,7 +3,6 @@
   "package": "com.minhcraft.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "server.ServerLevelMixin",
     "block.CakeBlockMixin",
     "block.CauldronBlockMixin",
     "block.MudBlockMixin",
@@ -14,10 +13,12 @@
     "entity.StrayMixin",
     "entity.ZombieAttackGoalMixin",
     "entity.ZombieMixin",
+    "giant_spawn_compat.GiantAttackGoalMixin",
     "item.BundleItemMixin",
     "item.EnchantmentHelperMixin",
     "item.EnchantmentsMixin",
-    "item.SwordItemMixin"
+    "item.SwordItemMixin",
+    "server.ServerLevelMixin"
   ],
   "injectors": {
     "defaultRequire": 1

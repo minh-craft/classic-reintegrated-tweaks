@@ -22,6 +22,9 @@ public class ModConfig extends MidnightConfig {
     @Entry(isSlider = true, min=0f, max=1f, precision = 100)
     public static float zombieBoundingBoxAttackRangeIncrease = 0.3f;
 
+    @Entry(isSlider = true, min=-3f, max=1f, precision = 100)
+    public static float giantBoundingBoxAttackRangeIncrease = -1.3f;
+
     @Entry(isSlider = true, min=0d, max=1d, precision = 100)
     public static double swordRangeIncrease = 0.5d;
 

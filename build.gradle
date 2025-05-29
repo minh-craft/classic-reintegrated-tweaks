@@ -48,6 +48,9 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
+	// Nostalgic Tweaks Compatibility
+	modImplementation "maven.modrinth:giant-spawn:$project.giant_spawn_version"
+
 	include modImplementation("com.jamieswhiteshirt:reach-entity-attributes:${project.reach_entity_attributes_version}")
 
 	modImplementation include ("maven.modrinth:midnightlib:${project.midnightlib_version}")
