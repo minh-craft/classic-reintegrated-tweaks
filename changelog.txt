@@ -59,3 +59,7 @@ v0.8.0
 - mixin to https://modrinth.com/mod/giant-spawn mod
     - allow modifying giant attack range
 - increase range of giant sounds
+
+================================================
+v0.8.0
+- disable anvil damage

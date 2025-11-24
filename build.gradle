@@ -50,6 +50,7 @@ dependencies {
 
 	// Nostalgic Tweaks Compatibility
 	modImplementation "maven.modrinth:giant-spawn:$project.giant_spawn_version"
+	modImplementation "maven.modrinth:collective:$project.collective_version"
 
 	include modImplementation("com.jamieswhiteshirt:reach-entity-attributes:${project.reach_entity_attributes_version}")
 
