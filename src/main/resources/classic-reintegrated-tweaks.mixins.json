@@ -19,7 +19,8 @@
     "item.EnchantmentHelperMixin",
     "item.EnchantmentsMixin",
     "item.SwordItemMixin",
-    "server.ServerLevelMixin"
+    "server.ServerLevelMixin",
+    "world.SpikeFeatureMixin"
   ],
   "injectors": {
     "defaultRequire": 1
