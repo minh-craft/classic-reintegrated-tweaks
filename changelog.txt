@@ -63,3 +63,7 @@ v0.8.0
 ================================================
 v0.9.0
 - disable anvil damage
+
+================================================
+v0.10.0
+- remove end crystal and iron bars from all end spikes
