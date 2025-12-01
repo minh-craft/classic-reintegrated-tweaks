@@ -31,4 +31,10 @@ public class ModConfig extends MidnightConfig {
     @Entry
     public static boolean disableStraySlowArrows = true;
 
+    @Entry
+    public static boolean disableOcelotAvoidingPlayer = false;
+
+    @Entry(isSlider = true, min=0f, max=16f, precision = 10)
+    public static float ocelotAvoidMaxDistance = 8.0f;
+
 }

@@ -1,2 +1,3 @@
 accessWidener v1 named
 accessible class net/minecraft/world/entity/animal/Ocelot$OcelotTemptGoal
+accessible method net/minecraft/world/entity/animal/Ocelot isTrusting ()Z
