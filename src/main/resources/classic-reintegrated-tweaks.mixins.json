@@ -10,6 +10,7 @@
     "entity.AbstractSkeletonMixin",
     "entity.GiantMixin",
     "entity.HuskMixin",
+    "entity.OcelotMixin",
     "entity.SpiderAttackGoalMixin",
     "entity.StrayMixin",
     "entity.ZombieAttackGoalMixin",
