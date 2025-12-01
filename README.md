@@ -1,7 +1,75 @@
-Tweaks for the Classic Reintegrated modpack.
-Current features:
-- Disable drowned conversion
-- Make zombies, husks, and skeletons float again, rather than sinking
-- Disable trap horse spawning during thunderstorms
-- Make swift sneak apply to all armor slots
-- Make swift sneak bonus cumulative across all equipped armor pieces
+================================================
+v0.1.0
+- zombies
+    - disable drowned conversion
+    - make zombies, husks float again, rather than sinking
+    - make husks burn in daylight
+    - increase attack range
+- spiders
+    - increase attack range
+- skeletons
+    - make skeletons float
+    - disable trap horse spawning during thunderstorms
+    - make skeleton arrow velocity slower, matching instant beta bow speed
+- enchant
+    - make swift sneak apply to all armor slots
+    - make swift sneak bonus cumulative across all equipped armor pieces
+- cauldron
+    - disable powder snow generation in snowy weather
+- cake
+    - add overeat for extra absorption hearts feature
+- swords
+    - increase attack range by 0.5 blocks
+- mud
+    - make mud blocks have full block collision
+
+================================================
+v0.2.0
+- make bundles no longer stack inside shulker boxes and supplementaries sacks
+
+================================================
+v0.3.0
+- add sound for eating cake normally
+- giants
+    - add low pitched zombie sounds
+    - set health to 45
+
+================================================
+v0.4.0
+- add rotten flesh to rotten leather to leather conversion process
+- change zombie loot table to only drop 0-1 rotten flesh
+
+================================================
+v0.5.0
+- decrease pitch of giant sounds
+- add loot table for giant, drops 6-9 rotten flesh
+
+================================================
+v0.6.0
+- add configuration for recipe custom sorting
+- add configuration for other mod properties
+
+================================================
+v0.7.0
+- update husk loot table to match zombie's
+- add text for config title screen
+
+================================================
+v0.8.0
+- mixin to https://modrinth.com/mod/giant-spawn mod
+    - allow modifying giant attack range
+- increase range of giant sounds
+
+================================================
+v0.9.0
+- disable anvil damage
+
+================================================
+v0.10.0
+- remove end crystal and iron bars from all end spikes
+
+================================================
+v0.11.0
+- make it easier to tame ocelots
+    - don't need to be in a tempted state to be tamed
+    - 1/2 chance instead of 1/3
