@@ -13,7 +13,9 @@
   "classic-reintegrated-tweaks.midnightconfig.zombieBoundingBoxAttackRangeIncrease": "Zombie Bounding Box Attack Range Increase",
   "classic-reintegrated-tweaks.midnightconfig.swordRangeIncrease": "Sword Range Increase",
   "classic-reintegrated-tweaks.midnightconfig.disableStraySlowArrows": "Disable Stray Slow Arrows",
-  "classic-reintegrated-tweaks.midnightconfig.disableOcelotAvoidingPlayer": "Disable Ocelot Avoiding Player"
+  "classic-reintegrated-tweaks.midnightconfig.disableOcelotAvoidingPlayer": "Disable Ocelot Avoiding Player",
+  "classic-reintegrated-tweaks.midnightconfig.endGatewayRadius": "End Gateway Radius",
+  "classic-reintegrated-tweaks.midnightconfig.endGatewayHeight": "End Gateway Height"
 
 
 }

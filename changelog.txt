@@ -1,3 +1,14 @@
+## v0.14.0
+
+contributed by PartoneTrain
+
+### Changed
+
+- updated ender dragon end gateway spawning code to create 4 gateways at once, in the north, west, south, and eastmost
+  corners of the end island.
+
+---
+
 ## v0.13.0
 
 ### Changed
