@@ -21,6 +21,7 @@
     "item.EnchantmentsMixin",
     "item.SwordItemMixin",
     "server.ServerLevelMixin",
+    "world.EndDragonFightMixin",
     "world.SpikeFeatureMixin"
   ],
   "injectors": {
