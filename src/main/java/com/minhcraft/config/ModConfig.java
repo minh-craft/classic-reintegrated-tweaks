@@ -1,6 +1,7 @@
 package com.minhcraft.config;
 
 import eu.midnightdust.lib.config.MidnightConfig;
+import net.minecraft.core.Vec3i;
 
 public class ModConfig extends MidnightConfig {
 
@@ -36,5 +37,11 @@ public class ModConfig extends MidnightConfig {
 
     @Entry(isSlider = true, min=0f, max=16f, precision = 10)
     public static float ocelotAvoidMaxDistance = 8.0f;
+
+    @Entry(isSlider = true, min=50, max=5000)
+    public static int endGatewayRadius = 96;
+
+    @Entry(isSlider = true, min=0, max=256)
+    public static int endGatewayHeight = 75;
 
 }
