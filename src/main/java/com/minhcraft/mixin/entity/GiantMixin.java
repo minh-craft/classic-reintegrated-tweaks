@@ -13,7 +13,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import org.spongepowered.asm.mixin.Mixin;
 
 @Mixin(Giant.class)
-public class GiantMixin extends Monster {
+public abstract class GiantMixin extends Monster {
 
     protected GiantMixin(EntityType<? extends Monster> entityType, Level level) {
         super(entityType, level);

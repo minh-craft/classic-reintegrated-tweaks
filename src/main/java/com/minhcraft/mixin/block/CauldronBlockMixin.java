@@ -7,7 +7,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyVariable;
 
 @Mixin(CauldronBlock.class)
-public class CauldronBlockMixin {
+public abstract class CauldronBlockMixin {
     @ModifyVariable(
             method = "shouldHandlePrecipitation",
             at = @At("HEAD"),

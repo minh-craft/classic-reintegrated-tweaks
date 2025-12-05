@@ -11,7 +11,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import java.util.List;
 
 @Mixin(RecipeBookComponent.class)
-public class RecipeBookComponentMixin {
+public abstract class RecipeBookComponentMixin {
 
     @Inject(
             method = "updateCollections",

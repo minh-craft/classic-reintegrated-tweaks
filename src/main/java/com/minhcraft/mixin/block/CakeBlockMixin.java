@@ -25,7 +25,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import static net.minecraft.world.level.block.CakeBlock.BITES;
 
 @Mixin(CakeBlock.class)
-public class CakeBlockMixin {
+public abstract class CakeBlockMixin {
 
     @Unique
     private static final int CAKE_ABSORPTION_DURATION = 24000; // 20:00 minutes

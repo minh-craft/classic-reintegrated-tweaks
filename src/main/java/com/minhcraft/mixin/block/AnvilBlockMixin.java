@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(AnvilBlock.class)
-public class AnvilBlockMixin {
+public abstract class AnvilBlockMixin {
     @Inject(
             method = "damage",
             at = @At("HEAD"),

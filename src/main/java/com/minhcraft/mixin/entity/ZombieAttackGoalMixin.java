@@ -8,7 +8,7 @@ import net.minecraft.world.entity.ai.goal.ZombieAttackGoal;
 import org.spongepowered.asm.mixin.Mixin;
 
 @Mixin(ZombieAttackGoal.class)
-public class ZombieAttackGoalMixin extends MeleeAttackGoal {
+public abstract class ZombieAttackGoalMixin extends MeleeAttackGoal {
 
     public ZombieAttackGoalMixin(PathfinderMob mob, double speedModifier, boolean followingTargetEvenIfNotSeen) {
         super(mob, speedModifier, followingTargetEvenIfNotSeen);

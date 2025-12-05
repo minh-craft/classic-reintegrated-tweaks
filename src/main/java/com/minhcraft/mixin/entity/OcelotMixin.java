@@ -14,7 +14,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(Ocelot.class)
-public class OcelotMixin {
+public abstract class OcelotMixin {
 
     // Set ocelot tame chance -> 1/X
     @ModifyArg(

@@ -8,7 +8,7 @@ import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import org.spongepowered.asm.mixin.Mixin;
 
 @Mixin(GiantAttackGoal.class)
-public class GiantAttackGoalMixin extends MeleeAttackGoal {
+public abstract class GiantAttackGoalMixin extends MeleeAttackGoal {
     public GiantAttackGoalMixin(PathfinderMob mob, double speedModifier, boolean followingTargetEvenIfNotSeen) {
         super(mob, speedModifier, followingTargetEvenIfNotSeen);
     }

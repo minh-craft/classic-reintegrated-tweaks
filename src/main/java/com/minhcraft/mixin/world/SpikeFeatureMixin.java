@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.injection.ModifyVariable;
 import org.spongepowered.asm.mixin.injection.Redirect;
 
 @Mixin(SpikeFeature.class)
-public class SpikeFeatureMixin {
+public abstract class SpikeFeatureMixin {
 
     @Redirect(method = "placeSpike", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/level/levelgen/feature/SpikeFeature$EndSpike;isGuarded()Z"))
     private boolean isGuardedOverride(SpikeFeature.EndSpike instance) {

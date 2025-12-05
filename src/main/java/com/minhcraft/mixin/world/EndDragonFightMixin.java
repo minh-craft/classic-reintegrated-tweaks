@@ -19,7 +19,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @Mixin(EndDragonFight.class)
-public class EndDragonFightMixin {
+public abstract class EndDragonFightMixin {
 
     @Unique
     final List<BlockPos> GATEWAY_POSITIONS = new ArrayList<>(Arrays.asList(

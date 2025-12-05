@@ -13,7 +13,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(MudBlock.class)
-public class MudBlockMixin {
+public abstract class MudBlockMixin {
 
     @Inject(
             method = "getCollisionShape",
