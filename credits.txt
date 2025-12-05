@@ -1,2 +1,2 @@
 - Rotten flesh texture from https://www.curseforge.com/minecraft/mc-mods/fleshz by Globox_Z
-- ocelot taming into cat code from https://github.com/Partonetrain/ocelotfix
+- ocelot taming into cat code from https://github.com/Partonetrain/trains_tweaks by Partonetrain
