@@ -11,6 +11,7 @@
     "entity.GiantMixin",
     "entity.HuskMixin",
     "entity.OcelotMixin",
+    "entity.SilverfishMergeWithStoneGoalMixin",
     "entity.SpiderAttackGoalMixin",
     "entity.StrayMixin",
     "entity.ZombieAttackGoalMixin",
