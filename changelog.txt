@@ -1,3 +1,11 @@
+## v0.15.0
+
+### Changed
+
+- baby hoglins can no longer spawn
+
+---
+
 ## v0.14.0
 
 contributed by PartoneTrain
