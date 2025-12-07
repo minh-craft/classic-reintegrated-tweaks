@@ -1,3 +1,11 @@
+## v0.16.0
+
+### Changed
+
+- Giants now despawn in daylight
+
+---
+
 ## v0.15.0
 
 ### Changed

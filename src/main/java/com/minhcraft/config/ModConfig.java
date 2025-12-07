@@ -1,7 +1,6 @@
 package com.minhcraft.config;
 
 import eu.midnightdust.lib.config.MidnightConfig;
-import net.minecraft.core.Vec3i;
 
 public class ModConfig extends MidnightConfig {
 
@@ -25,6 +24,12 @@ public class ModConfig extends MidnightConfig {
 
     @Entry(isSlider = true, min=-3f, max=1f, precision = 100)
     public static float giantBoundingBoxAttackRangeIncrease = -1.3f;
+
+    @Entry
+    public static boolean giantDespawnInSunlight = true;
+
+    @Entry(isSlider = true, min=1, max=11)
+    public static int giantDespawnWhenSkyDarkenLessThan = 11;
 
     @Entry(isSlider = true, min=0d, max=1d, precision = 100)
     public static double swordRangeIncrease = 0.5d;

@@ -1,5 +1,6 @@
 package com.minhcraft.mixin.entity;
 
+import com.minhcraft.config.ModConfig;
 import com.minhcraft.register.ModSounds;
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvent;
@@ -43,10 +44,26 @@ public abstract class GiantMixin extends Monster {
         this.playSound(this.getStepSound(), 1.2F, 0.65F);
     }
 
-    @Override
     // volume increased beyond 1.0 just increases sound range
     // 2.2 increases sound range to ~35 blocks
+    @Override
     protected float getSoundVolume() {
         return 2.2F;
+    }
+
+    // Despawn the giant if it sees the sun
+    @Override
+    protected void customServerAiStep() {
+        if (ModConfig.giantDespawnInSunlight
+                && !this.level().dimensionType().hasFixedTime()
+                && this.level().getSkyDarken() < ModConfig.giantDespawnWhenSkyDarkenLessThan) // isDay checks for < 4
+        {
+            if (this.level().canSeeSky(this.blockPosition()) && this.random.nextFloat() * 40.0F < 1.0F) {
+                this.playSound(ModSounds.GIANT_HURT, 1.6F, 0.8F);
+                this.discard();
+            }
+        }
+
+        super.customServerAiStep();
     }
 }
