@@ -63,4 +63,10 @@ public class ModConfig extends MidnightConfig {
 
     @Entry(isSlider = true, min=0.0F, max=1.0F)
     public static float newMoonBrightness = 0.0F;
+
+    @Entry(isSlider = true, min=0.0F, max=1.0F)
+    public static float nightVisionModifier = 0.25F;
+
+    @Entry(isSlider = true, min=0.0F, max=2.0F)
+    public static float endDimensionLightMapBrightnessModifier = 0.8F;
 }

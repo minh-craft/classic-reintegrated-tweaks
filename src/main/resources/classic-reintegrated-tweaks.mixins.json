@@ -30,6 +30,8 @@
   },
   "client": [
     "client.ClientRecipeBookMixin",
+    "client.GameRendererMixin",
+    "client.LightTextureMixin",
     "client.RecipeBookComponentMixin",
     "true_darkness_compat.DarknessMixin"
   ]

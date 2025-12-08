@@ -23,5 +23,7 @@
   "classic-reintegrated-tweaks.midnightconfig.threeQuartersMoonBrightness": "Three-Quarters Moon Brightness",
   "classic-reintegrated-tweaks.midnightconfig.halfMoonBrightness": "Half Moon Brightness",
   "classic-reintegrated-tweaks.midnightconfig.oneQuarterMoonBrightness": "One-Quarter Moon Brightness",
-  "classic-reintegrated-tweaks.midnightconfig.newMoonBrightness": "New Moon Brightness"
+  "classic-reintegrated-tweaks.midnightconfig.newMoonBrightness": "New Moon Brightness",
+  "classic-reintegrated-tweaks.midnightconfig.nightVisionModifier": "Night Vision Modifier",
+  "classic-reintegrated-tweaks.midnightconfig.endDimensionLightMapBrightnessModifier": "End Dimension Light Map Brightness Modifier"
 }

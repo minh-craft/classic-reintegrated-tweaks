@@ -59,15 +59,16 @@ dependencies {
 	// Owo lib - True Darkness dependence
 	modImplementation("io.wispforest:owo-lib:$project.owo_lib_version")
 	annotationProcessor("io.wispforest:owo-lib:$project.owo_lib_version")
-//	include("io.wispforest:owo-sentinel:$project.owo_lib_version")
+	//	include("io.wispforest:owo-sentinel:$project.owo_lib_version")
+
 	// True Darkness
 	modImplementation "maven.modrinth:true-darkness-refabricated:$project.true_darkness_refabricated_version"
 
 
-//	modImplementation "maven.modrinth:owo-lib:$project.owo_lib_version"
-
+	// Reach Entity Attributes - for adjusting entity attack range
 	include modImplementation("com.jamieswhiteshirt:reach-entity-attributes:${project.reach_entity_attributes_version}")
 
+	// For Config Options
 	modImplementation include ("maven.modrinth:midnightlib:${project.midnightlib_version}")
 	modImplementation("com.terraformersmc:modmenu:${project.modmenu_version}")
 }

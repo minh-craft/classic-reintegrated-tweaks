@@ -1,3 +1,11 @@
+## v0.18.0
+
+### Added
+
+- Added customization options for adjusting the brightness of the End and the night vision effect
+
+---
+
 ## v0.17.0
 
 ### Added
