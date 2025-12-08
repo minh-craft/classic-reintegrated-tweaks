@@ -18,7 +18,10 @@
   "classic-reintegrated-tweaks.midnightconfig.disableStraySlowArrows": "Disable Stray Slow Arrows",
   "classic-reintegrated-tweaks.midnightconfig.disableOcelotAvoidingPlayer": "Disable Ocelot Avoiding Player",
   "classic-reintegrated-tweaks.midnightconfig.endGatewayRadius": "End Gateway Radius",
-  "classic-reintegrated-tweaks.midnightconfig.endGatewayHeight": "End Gateway Height"
-
-
+  "classic-reintegrated-tweaks.midnightconfig.endGatewayHeight": "End Gateway Height",
+  "classic-reintegrated-tweaks.midnightconfig.fullMoonBrightness": "Full Moon Brightness",
+  "classic-reintegrated-tweaks.midnightconfig.threeQuartersMoonBrightness": "Three-Quarters Moon Brightness",
+  "classic-reintegrated-tweaks.midnightconfig.halfMoonBrightness": "Half Moon Brightness",
+  "classic-reintegrated-tweaks.midnightconfig.oneQuarterMoonBrightness": "One-Quarter Moon Brightness",
+  "classic-reintegrated-tweaks.midnightconfig.newMoonBrightness": "New Moon Brightness"
 }

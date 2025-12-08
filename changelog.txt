@@ -1,3 +1,11 @@
+## v0.17.0
+
+### Added
+
+- Added ability to fully customize nighttime brightness by moon phase in True Darkness Refabricated mod
+
+---
+
 ## v0.16.0
 
 ### Changed

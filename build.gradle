@@ -34,6 +34,10 @@ repositories {
 		name = "Terraformers"
 		url = "https://maven.terraformersmc.com/"
 	}
+	maven {
+		name = "Wisp Forest"
+		url = "https://maven.wispforest.io"
+	}
 }
 
 dependencies {
@@ -51,6 +55,16 @@ dependencies {
 	// Giant Spawn
 	modImplementation "maven.modrinth:giant-spawn:$project.giant_spawn_version"
 	modImplementation "maven.modrinth:collective:$project.collective_version"
+
+	// Owo lib - True Darkness dependence
+	modImplementation("io.wispforest:owo-lib:$project.owo_lib_version")
+	annotationProcessor("io.wispforest:owo-lib:$project.owo_lib_version")
+//	include("io.wispforest:owo-sentinel:$project.owo_lib_version")
+	// True Darkness
+	modImplementation "maven.modrinth:true-darkness-refabricated:$project.true_darkness_refabricated_version"
+
+
+//	modImplementation "maven.modrinth:owo-lib:$project.owo_lib_version"
 
 	include modImplementation("com.jamieswhiteshirt:reach-entity-attributes:${project.reach_entity_attributes_version}")
 

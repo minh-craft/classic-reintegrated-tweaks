@@ -30,6 +30,7 @@
   },
   "client": [
     "client.ClientRecipeBookMixin",
-    "client.RecipeBookComponentMixin"
+    "client.RecipeBookComponentMixin",
+    "true_darkness_compat.DarknessMixin"
   ]
 }

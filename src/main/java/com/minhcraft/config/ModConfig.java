@@ -49,4 +49,18 @@ public class ModConfig extends MidnightConfig {
     @Entry(isSlider = true, min=0, max=256)
     public static int endGatewayHeight = 75;
 
+    @Entry(isSlider = true, min=0.0F, max=1.0F)
+    public static float fullMoonBrightness = 1.0F;
+
+    @Entry(isSlider = true, min=0.0F, max=1.0F)
+    public static float threeQuartersMoonBrightness = 0.88F;
+
+    @Entry(isSlider = true, min=0.0F, max=1.0F)
+    public static float halfMoonBrightness = 0.75F;
+
+    @Entry(isSlider = true, min=0.0F, max=1.0F)
+    public static float oneQuarterMoonBrightness = 0.5F;
+
+    @Entry(isSlider = true, min=0.0F, max=1.0F)
+    public static float newMoonBrightness = 0.0F;
 }
