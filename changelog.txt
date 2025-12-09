@@ -3,9 +3,9 @@
 ### Added
 
 - Added customization options for adjusting
-    - the round robin lighting maximum deducted sky light level
-    - the minimum true darkness level
-    - the maximum true darkness level
+    - Nostalgic Tweak's round robin lighting maximum deducted sky light level
+    - True Darkness's minimum true darkness level
+    - True Darkness's maximum true darkness level
 
 ---
 
