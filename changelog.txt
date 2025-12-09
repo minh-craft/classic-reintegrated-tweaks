@@ -1,3 +1,14 @@
+## v0.19.0
+
+### Added
+
+- Added customization options for adjusting
+    - the round robin lighting maximum deducted sky light level
+    - the minimum true darkness level
+    - the maximum true darkness level
+
+---
+
 ## v0.18.0
 
 ### Added

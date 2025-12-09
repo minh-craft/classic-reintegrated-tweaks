@@ -37,14 +37,14 @@ public abstract class DarknessMixin {
     }
 
 
-//    // Override gamma settings
-//    // Using this as a hack to increase the maximum brightness level of True Darkness at night
-//    @Redirect(
-//            method = "updateLuminance",
-//            at = @At(value = "INVOKE", target = "Ljava/lang/Double;floatValue()F"))
-//    private static float modifyGammaSettings(Double instance) {
-//        return instance.floatValue() * 5; // TODO turn this into config value
-//    }
+    // Override gamma settings
+    // Using this as a hack to increase the maximum brightness level of True Darkness at night
+    @Redirect(
+            method = "updateLuminance",
+            at = @At(value = "INVOKE", target = "Ljava/lang/Double;floatValue()F"))
+    private static float modifyGammaSettings(Double instance) {
+        return instance.floatValue() * ModConfig.scaleTrueDarknessGamma;
+    }
 
 
     // Override luminance value
