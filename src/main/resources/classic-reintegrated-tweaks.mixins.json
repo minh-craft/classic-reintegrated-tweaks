@@ -22,8 +22,6 @@
     "item.EnchantmentsMixin",
     "item.SwordItemMixin",
     "nostalgic_tweaks_compat.LightingHelperMixin",
-    "nostalgic_tweaks_compat.LightTextureHelperMixin",
-    "nostalgic_tweaks_compat.NostalgicDataLayerMixin",
     "server.ServerLevelMixin",
     "world.EndDragonFightMixin",
     "world.SpikeFeatureMixin"
@@ -36,7 +34,6 @@
     "client.GameRendererMixin",
     "client.LightTextureMixin",
     "client.RecipeBookComponentMixin",
-    "nostalgic_tweaks_compat.LightTextureMixinSquared",
     "true_darkness_compat.DarknessMixin"
   ]
 }
