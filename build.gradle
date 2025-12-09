@@ -26,8 +26,17 @@ repositories {
 			includeGroup "com.jamieswhiteshirt"
 		}
 	}
-	maven {
-		url = "https://api.modrinth.com/maven"
+	exclusiveContent {
+		forRepository {
+			maven {
+				name = "Modrinth"
+				url = "https://api.modrinth.com/maven"
+			}
+		}
+//		forRepositories(fg.repository) // Only add this if you're using ForgeGradle, otherwise remove this line
+		filter {
+			includeGroup "maven.modrinth"
+		}
 	}
 	// Mod Menu
 	maven {
@@ -38,6 +47,10 @@ repositories {
 		name = "Wisp Forest"
 		url = "https://maven.wispforest.io"
 	}
+	maven { url = "https://maven.bawnorton.com/releases" }
+
+	// Mirror
+	maven { url = "https://maven.enjarai.dev/mirrors" }
 }
 
 dependencies {
@@ -52,6 +65,8 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
+	include(implementation(annotationProcessor("com.github.bawnorton.mixinsquared:mixinsquared-fabric:0.3.7-beta.1")))
+
 	// Giant Spawn
 	modImplementation "maven.modrinth:giant-spawn:$project.giant_spawn_version"
 	modImplementation "maven.modrinth:collective:$project.collective_version"
@@ -64,6 +79,8 @@ dependencies {
 	// True Darkness
 	modImplementation "maven.modrinth:true-darkness-refabricated:$project.true_darkness_refabricated_version"
 
+    // Nostalgic Tweaks Compatibility
+	modImplementation include ("maven.modrinth:nostalgic-tweaks:$project.nostalgic_tweaks_version")
 
 	// Reach Entity Attributes - for adjusting entity attack range
 	include modImplementation("com.jamieswhiteshirt:reach-entity-attributes:${project.reach_entity_attributes_version}")

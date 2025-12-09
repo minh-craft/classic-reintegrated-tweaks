@@ -1,0 +1,19 @@
+package com.minhcraft.mixin.nostalgic_tweaks_compat;
+
+import com.minhcraft.config.ModConfig;
+import mod.adrenix.nostalgic.helper.candy.light.LightingHelper;
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.injection.Constant;
+import org.spongepowered.asm.mixin.injection.ModifyConstant;
+
+@Mixin(LightingHelper.class)
+public class LightingHelperMixin {
+
+    // Change maximum light level that can be subtracted from lightmap
+    // Lower value makes nighttime brighter
+    // Affects Nostalgic Tweak's round robin lighting
+    @ModifyConstant(method = "getCombinedLight", constant = @Constant(intValue = 11), remap = false)
+    private static int overrideMaximumLightLevelSubtraction(int constant) {
+        return ModConfig.roundRobinMaximumDeductedLightLevel;
+    }
+}
