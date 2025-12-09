@@ -21,6 +21,7 @@
     "item.EnchantmentHelperMixin",
     "item.EnchantmentsMixin",
     "item.SwordItemMixin",
+    "nostalgic_tweaks_compat.LightingHelperMixin",
     "server.ServerLevelMixin",
     "world.EndDragonFightMixin",
     "world.SpikeFeatureMixin"

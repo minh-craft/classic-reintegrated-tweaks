@@ -26,8 +26,17 @@ repositories {
 			includeGroup "com.jamieswhiteshirt"
 		}
 	}
-	maven {
-		url = "https://api.modrinth.com/maven"
+	exclusiveContent {
+		forRepository {
+			maven {
+				name = "Modrinth"
+				url = "https://api.modrinth.com/maven"
+			}
+		}
+//		forRepositories(fg.repository) // Only add this if you're using ForgeGradle, otherwise remove this line
+		filter {
+			includeGroup "maven.modrinth"
+		}
 	}
 	// Mod Menu
 	maven {
@@ -64,6 +73,8 @@ dependencies {
 	// True Darkness
 	modImplementation "maven.modrinth:true-darkness-refabricated:$project.true_darkness_refabricated_version"
 
+    // Nostalgic Tweaks Compatibility
+	modImplementation "maven.modrinth:nostalgic-tweaks:$project.nostalgic_tweaks_version"
 
 	// Reach Entity Attributes - for adjusting entity attack range
 	include modImplementation("com.jamieswhiteshirt:reach-entity-attributes:${project.reach_entity_attributes_version}")
