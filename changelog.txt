@@ -1,3 +1,11 @@
+## v0.19.1
+
+### Added
+
+- Lang entries for new config values
+
+---
+
 ## v0.19.0
 
 ### Added
