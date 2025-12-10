@@ -25,5 +25,8 @@
   "classic-reintegrated-tweaks.midnightconfig.oneQuarterMoonBrightness": "One-Quarter Moon Brightness",
   "classic-reintegrated-tweaks.midnightconfig.newMoonBrightness": "New Moon Brightness",
   "classic-reintegrated-tweaks.midnightconfig.nightVisionModifier": "Night Vision Modifier",
-  "classic-reintegrated-tweaks.midnightconfig.endDimensionLightMapBrightnessModifier": "End Dimension Light Map Brightness Modifier"
+  "classic-reintegrated-tweaks.midnightconfig.endDimensionLightMapBrightnessModifier": "End Dimension Light Map Brightness Modifier",
+  "classic-reintegrated-tweaks.midnightconfig.trueDarknessMinimumLightLevel": "True Darkness Minimum Light Level",
+  "classic-reintegrated-tweaks.midnightconfig.roundRobinMaximumDeductedLightLevel": "Round Robin Maximum Deducted Light Level",
+  "classic-reintegrated-tweaks.midnightconfig.scaleTrueDarknessGamma": "Scale True Darkness Gamma"
 }
