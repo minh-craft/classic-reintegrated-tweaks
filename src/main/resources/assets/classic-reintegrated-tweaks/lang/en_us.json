@@ -29,5 +29,8 @@
   "classic-reintegrated-tweaks.midnightconfig.endDimensionLightMapBrightnessModifier": "End Dimension Light Map Brightness Modifier",
   "classic-reintegrated-tweaks.midnightconfig.trueDarknessMinimumLightLevel": "True Darkness Minimum Light Level",
   "classic-reintegrated-tweaks.midnightconfig.roundRobinMaximumDeductedLightLevel": "Round Robin Maximum Deducted Light Level",
-  "classic-reintegrated-tweaks.midnightconfig.scaleTrueDarknessGamma": "Scale True Darkness Gamma"
+  "classic-reintegrated-tweaks.midnightconfig.scaleTrueDarknessGamma": "Scale True Darkness Gamma",
+  "classic-reintegrated-tweaks.midnightconfig.crossbowShootingPower": "Crossbow Shooting Power",
+  "classic-reintegrated-tweaks.midnightconfig.crossbowChargeDuration": "Crossbow Charge Duration",
+  "classic-reintegrated-tweaks.midnightconfig.crossbowArrowBaseDamage": "Crossbow Arrow Base Damage"
 }
