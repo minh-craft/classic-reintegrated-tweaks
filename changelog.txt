@@ -3,6 +3,8 @@
 ### Added
 
 - Disable enchantment glint on enchanted armor
+- Add configuration options for adjusting crossbow charge speed and shot power
+
 
 ---
 

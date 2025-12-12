@@ -3,6 +3,7 @@
   "package": "com.minhcraft.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "arrow_module.CrossbowItemMixin",
     "block.AnvilBlockMixin",
     "block.CakeBlockMixin",
     "block.CauldronBlockMixin",

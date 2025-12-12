@@ -78,4 +78,10 @@ public class ModConfig extends MidnightConfig {
 
     @Entry(isSlider = true, min=1.0F, max=3.0F, precision = 100)
     public static float scaleTrueDarknessGamma = 1.0F;
+
+    @Entry(isSlider = true, min=1.0F, max=10.0F, precision = 100)
+    public static float crossbowShootingPower = 3.15F;
+
+    @Entry(isSlider = true, min=10, max=25)
+    public static int crossbowChargeDuration = 25;
 }
