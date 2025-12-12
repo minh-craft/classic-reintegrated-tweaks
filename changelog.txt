@@ -1,3 +1,11 @@
+## v0.20.0
+
+### Added
+
+- Disable enchantment glint on enchanted armor
+
+---
+
 ## v0.19.1
 
 ### Added

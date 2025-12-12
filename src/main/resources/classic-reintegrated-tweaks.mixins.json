@@ -17,6 +17,7 @@
     "entity.ZombieAttackGoalMixin",
     "entity.ZombieMixin",
     "giant_spawn_compat.GiantAttackGoalMixin",
+    "item.ArmorMixin",
     "item.BundleItemMixin",
     "item.EnchantmentHelperMixin",
     "item.EnchantmentsMixin",
