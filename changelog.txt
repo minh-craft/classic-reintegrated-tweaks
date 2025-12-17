@@ -1,3 +1,11 @@
+## v0.20.1
+
+### Changed
+
+- Removed unnecessary access widener
+
+---
+
 ## v0.20.0
 
 ### Added
