@@ -13,7 +13,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(CrossbowItem.class)
-public class CrossbowItemMixin {
+public abstract class CrossbowItemMixin {
 
     // Override shooting power - default is 3.15
     @Inject(

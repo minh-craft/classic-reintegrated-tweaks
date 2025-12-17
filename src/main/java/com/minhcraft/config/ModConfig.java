@@ -87,4 +87,7 @@ public class ModConfig extends MidnightConfig {
 
     @Entry(isSlider = true, min=0.0, max=4.0)
     public static double crossbowArrowBaseDamage = 2.0;
+
+    @Entry
+    public static boolean disableArcheryExpansionArrowGui = false;
 }

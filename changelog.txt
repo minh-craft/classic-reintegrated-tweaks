@@ -3,7 +3,10 @@
 ### Added
 
 - Disable enchantment glint on enchanted armor
-- Add configuration options for adjusting crossbow charge speed and shot power
+- Add configuration options for adjusting crossbow charge speed and shot power and base damage
+- Disable crit arrow
+- Add Archery Expansion's arrow GUI to crossbow loading
+    - Also add option to disable arrow GUI entirely
 
 
 ---

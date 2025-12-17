@@ -38,6 +38,13 @@ repositories {
 			includeGroup "maven.modrinth"
 		}
 	}
+
+	// Mixin Squared
+	maven { url = "https://maven.bawnorton.com/releases" }
+
+	// Mirror
+	maven { url = "https://maven.enjarai.dev/mirrors" }
+
 	// Mod Menu
 	maven {
 		name = "Terraformers"
@@ -61,13 +68,16 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
+	// Mixin Squared
+	include(implementation(annotationProcessor("com.github.bawnorton.mixinsquared:mixinsquared-fabric:0.3.7-beta.1")))
+
 	// Giant Spawn
 	modImplementation "maven.modrinth:giant-spawn:$project.giant_spawn_version"
 	modImplementation "maven.modrinth:collective:$project.collective_version"
 
 	// Owo lib - True Darkness dependence
 	modImplementation("io.wispforest:owo-lib:$project.owo_lib_version")
-	annotationProcessor("io.wispforest:owo-lib:$project.owo_lib_version")
+//	annotationProcessor("io.wispforest:owo-lib:$project.owo_lib_version")
 	//	include("io.wispforest:owo-sentinel:$project.owo_lib_version")
 
 	// True Darkness
@@ -75,6 +85,9 @@ dependencies {
 
     // Nostalgic Tweaks Compatibility
 	modImplementation "maven.modrinth:nostalgic-tweaks:$project.nostalgic_tweaks_version"
+
+	// Archery Expansion Compatibility
+	modImplementation "maven.modrinth:archery-expansion:$project.archery_expansion_version"
 
 	// Reach Entity Attributes - for adjusting entity attack range
 	include modImplementation("com.jamieswhiteshirt:reach-entity-attributes:${project.reach_entity_attributes_version}")
