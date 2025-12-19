@@ -6,6 +6,7 @@
     "arrow_module.AbstractArrowMixin",
     "arrow_module.CrossbowItemMixin",
     "block.AnvilBlockMixin",
+    "block.BlocksMixin",
     "block.CakeBlockMixin",
     "block.CauldronBlockMixin",
     "block.MudBlockMixin",

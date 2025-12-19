@@ -1,3 +1,11 @@
+## v0.21.0
+
+### Added
+
+- Added light level of 15 to Amethyst Block
+
+---
+
 ## v0.20.1
 
 ### Changed
