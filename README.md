@@ -1,5 +1,5 @@
 Tweaks for the Beyond Beta modpack.
-See changelog for full list of features.
+See [changelog](changelog.md) for full list of features.
 
 Credits:
 - Rotten flesh texture from https://www.curseforge.com/minecraft/mc-mods/fleshz by Globox_Z
