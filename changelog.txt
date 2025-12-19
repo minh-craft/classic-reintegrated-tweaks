@@ -1,3 +1,11 @@
+## v0.22.0
+
+### Added
+
+- Added new paintings by Kristoffer Zetterstrand, adapted by https://www.youtube.com/@Mongster83
+
+---
+
 ## v0.21.0
 
 ### Added
