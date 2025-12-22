@@ -90,4 +90,10 @@ public class ModConfig extends MidnightConfig {
 
     @Entry
     public static boolean disableArcheryExpansionArrowGui = false;
+
+    @Entry(isSlider = true, min=0.0F, max=1.0F, precision = 100)
+    public static float whitenedCloudFullMoonBrightness = 0.25F;
+
+    @Entry(isSlider = true, min=0.0F, max=1.0F, precision = 100)
+    public static float whitenedCloudNewMoonBrightness = 0.2F;
 }

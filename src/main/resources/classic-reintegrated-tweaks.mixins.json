@@ -37,6 +37,7 @@
     "archery_exp_compat.GuiMixinSquared",
     "client.ClientRecipeBookMixin",
     "client.GameRendererMixin",
+    "client.LevelRendererMixin",
     "client.LightTextureMixin",
     "client.RecipeBookComponentMixin",
     "true_darkness_compat.DarknessMixin"
