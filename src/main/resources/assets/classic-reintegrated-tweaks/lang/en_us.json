@@ -59,5 +59,6 @@
   "classic-reintegrated-tweaks.midnightconfig.crossbowShootingPower": "Crossbow Shooting Power",
   "classic-reintegrated-tweaks.midnightconfig.crossbowChargeDuration": "Crossbow Charge Duration",
   "classic-reintegrated-tweaks.midnightconfig.crossbowArrowBaseDamage": "Crossbow Arrow Base Damage",
-  "classic-reintegrated-tweaks.midnightconfig.disableArcheryExpansionArrowGui": "Disable Archery Expansion Arrow GUI"
+  "classic-reintegrated-tweaks.midnightconfig.disableArcheryExpansionArrowGui": "Disable Archery Expansion Arrow GUI",
+  "classic-reintegrated-tweaks.midnightconfig.screamingGoatChance": "Screaming Goat Chance"
 }

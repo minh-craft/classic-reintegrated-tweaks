@@ -12,6 +12,7 @@
     "block.MudBlockMixin",
     "entity.AbstractSkeletonMixin",
     "entity.GiantMixin",
+    "entity.GoatMixin",
     "entity.HoglinMixin",
     "entity.HuskMixin",
     "entity.OcelotMixin",

@@ -1,3 +1,12 @@
+## v0.23.0
+
+### Added
+
+- Added eating sound to cake when overeating too
+- Added config option to set chance of screaming goat spawn
+
+---
+
 ## v0.22.0
 
 ### Added

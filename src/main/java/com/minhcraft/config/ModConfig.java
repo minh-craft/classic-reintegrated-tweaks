@@ -10,19 +10,19 @@ public class ModConfig extends MidnightConfig {
     @Entry(isSlider = true, min=0, max=20)
     public static int cakeMaxAbsorptionHearts = 8;
 
-    @Entry(isSlider = true, min=0f, max=1.5f, precision = 100)
+    @Entry(isSlider = true, min=0f, max=1.5f)
     public static float skeletonArrowVelocityDecrease = 0.5f;
 
-    @Entry(isSlider = true, min=-1f, max=1f, precision = 100)
+    @Entry(isSlider = true, min=-1f, max=1f)
     public static float spiderBoundingBoxAttackRangeIncrease = 0f;
 
-    @Entry(isSlider = true, min=-1f, max=1f, precision = 100)
+    @Entry(isSlider = true, min=-1f, max=1f)
     public static float caveSpiderBoundingBoxAttackRangeIncrease = 0f;
 
-    @Entry(isSlider = true, min=0f, max=1f, precision = 100)
+    @Entry(isSlider = true, min=0f, max=1f)
     public static float zombieBoundingBoxAttackRangeIncrease = 0.3f;
 
-    @Entry(isSlider = true, min=-3f, max=1f, precision = 100)
+    @Entry(isSlider = true, min=-3f, max=1f)
     public static float giantBoundingBoxAttackRangeIncrease = -1.3f;
 
     @Entry
@@ -31,7 +31,7 @@ public class ModConfig extends MidnightConfig {
     @Entry(isSlider = true, min=1, max=11)
     public static int giantDespawnWhenSkyDarkenLessThan = 11;
 
-    @Entry(isSlider = true, min=0d, max=1d, precision = 100)
+    @Entry(isSlider = true, min=0d, max=1d)
     public static double swordRangeIncrease = 0.5d;
 
     @Entry
@@ -76,10 +76,10 @@ public class ModConfig extends MidnightConfig {
     @Entry(isSlider = true, min=0, max=11)
     public static int roundRobinMaximumDeductedLightLevel = 11;
 
-    @Entry(isSlider = true, min=1.0F, max=3.0F, precision = 100)
+    @Entry(isSlider = true, min=1.0F, max=3.0F)
     public static float scaleTrueDarknessGamma = 1.0F;
 
-    @Entry(isSlider = true, min=1.0F, max=10.0F, precision = 100)
+    @Entry(isSlider = true, min=1.0F, max=10.0F)
     public static float crossbowShootingPower = 3.15F;
 
     @Entry(isSlider = true, min=10, max=50)
@@ -90,4 +90,7 @@ public class ModConfig extends MidnightConfig {
 
     @Entry
     public static boolean disableArcheryExpansionArrowGui = false;
+
+    @Entry(isSlider = true, min=0.0, max=1.0)
+    public static double screamingGoatChance = 0.02;
 }
