@@ -93,4 +93,16 @@ public class ModConfig extends MidnightConfig {
 
     @Entry(isSlider = true, min=0.0, max=1.0)
     public static double screamingGoatChance = 0.02;
+
+    @Entry(isSlider = true, min=1, max=30)
+    public static int regularGoatMinimumRamWaitTimeSeconds = 30;
+
+    @Entry(isSlider = true, min=1, max=300)
+    public static int regularGoatMaximumRamWaitTimeSeconds = 300;
+
+    @Entry(isSlider = true, min=1, max=30)
+    public static int screamingGoatMinimumRamWaitTimeSeconds = 5;
+
+    @Entry(isSlider = true, min=1, max=300)
+    public static int screamingGoatMaximumRamWaitTimeSeconds = 15;
 }

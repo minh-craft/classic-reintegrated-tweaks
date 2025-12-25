@@ -10,10 +10,18 @@ import org.spongepowered.asm.mixin.injection.ModifyConstant;
 public abstract class GoatMixin {
 
     @ModifyConstant(
+            method = "ageBoundaryReached",
+            constant = @Constant(doubleValue = 2.0)
+    )
+    private double crt$modifyRamDamage(double constant) {
+        return 1.0;
+    }
+
+    @ModifyConstant(
             method = "finalizeSpawn",
             constant = @Constant(doubleValue = 0.02)
     )
-    private double modifyScreamingGoatChance(double constant) {
+    private double crt$modifyScreamingGoatChance(double constant) {
 
         return ModConfig.screamingGoatChance;
     }

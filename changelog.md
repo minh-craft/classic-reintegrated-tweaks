@@ -1,3 +1,17 @@
+## v0.24.0
+
+### Added
+
+- Foxes:
+  - Disable baby foxes from spawning
+  - Added ability to set foxes to trusting by feeding them
+  - Override fox spawn items - 25% each of wheat, egg, leather, feather
+- Goats:
+  - Reduce ramming damage to 1/2 heart
+  - Add config options for adjusting wait time between rams
+
+---
+
 ## v0.23.0
 
 ### Added
