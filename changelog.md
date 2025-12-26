@@ -1,3 +1,15 @@
+## v0.25.0
+
+### Added
+
+- Allow enchantments to be retained when repairing in the crafting grid
+- Disable equipment drops for wither skeletons, piglins, piglin brutes, zombified piglins
+  - Code from https://github.com/Nostalgica-Reverie/Nostalgic-Tweaks by @Adrenix 
+- Disable charged creeper explosion dropping mob heads
+- Disable dripstone creating lava in cauldrons
+
+---
+
 ## v0.24.0
 
 ### Added
