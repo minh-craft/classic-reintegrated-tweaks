@@ -76,26 +76,27 @@ public abstract class FoxMixin extends Animal {
     }
 
     // Override fox spawn items
+    // 40% egg, 40% feather, 20% leather
     @Inject(
             method = "populateDefaultEquipmentSlots",
-            at = @At("HEAD")
+            at = @At("HEAD"),
+            cancellable = true
     )
     private void crt$overrideFoxItems(RandomSource random, DifficultyInstance difficulty, CallbackInfo ci) {
         if (random.nextFloat() < 0.2F) {
             float f = random.nextFloat();
             ItemStack itemStack;
-            if (f < 0.25F) {
+            if (f < 0.4F) {
                 itemStack = new ItemStack(Items.EGG);
-            } else if (f < 0.5F) {
-                itemStack = new ItemStack(Items.WHEAT);
-            } else if (f < 0.75F) {
-                itemStack = new ItemStack(Items.LEATHER);
-            } else {
+            } else if (f < 0.8F) {
                 itemStack = new ItemStack(Items.FEATHER);
+            } else {
+                itemStack = new ItemStack(Items.LEATHER);
             }
 
             this.setItemSlot(EquipmentSlot.MAINHAND, itemStack);
         }
+        ci.cancel();
     }
 
     // Fox will trust all players as long as it has been fed once by anyone

@@ -1,3 +1,12 @@
+## v0.25.1
+
+### Changed
+
+- Fixed fox item override not working
+- Adjusted fox items to be only feathers, eggs, and leather
+
+---
+
 ## v0.25.0
 
 ### Added
