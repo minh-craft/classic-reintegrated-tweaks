@@ -1,3 +1,11 @@
+## v0.26.0
+
+### Added
+
+- Added config option to cap maximum boat slipperiness to allow nerfing ice boats
+
+---
+
 ## v0.25.1
 
 ### Changed

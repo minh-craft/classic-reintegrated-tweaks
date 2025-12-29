@@ -60,5 +60,10 @@
   "classic-reintegrated-tweaks.midnightconfig.crossbowChargeDuration": "Crossbow Charge Duration",
   "classic-reintegrated-tweaks.midnightconfig.crossbowArrowBaseDamage": "Crossbow Arrow Base Damage",
   "classic-reintegrated-tweaks.midnightconfig.disableArcheryExpansionArrowGui": "Disable Archery Expansion Arrow GUI",
-  "classic-reintegrated-tweaks.midnightconfig.screamingGoatChance": "Screaming Goat Chance"
+  "classic-reintegrated-tweaks.midnightconfig.screamingGoatChance": "Screaming Goat Chance",
+  "classic-reintegrated-tweaks.midnightconfig.regularGoatMinimumRamWaitTimeSeconds": "Regular Goat Minimum Ram Wait Time in Seconds",
+  "classic-reintegrated-tweaks.midnightconfig.regularGoatMaximumRamWaitTimeSeconds": "Regular Goat Maximum Ram Wait Time in Seconds",
+  "classic-reintegrated-tweaks.midnightconfig.screamingGoatMinimumRamWaitTimeSeconds": "Screaming Goat Minimum Ram Wait Time in Seconds",
+  "classic-reintegrated-tweaks.midnightconfig.screamingGoatMaximumRamWaitTimeSeconds": "Screaming Goat Maximum Ram Wait Time in Seconds",
+  "classic-reintegrated-tweaks.midnightconfig.boatMaxSlipperiness": "Max Boat Slipperiness"
 }

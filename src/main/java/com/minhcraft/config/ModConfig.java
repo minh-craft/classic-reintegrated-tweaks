@@ -105,4 +105,7 @@ public class ModConfig extends MidnightConfig {
 
     @Entry(isSlider = true, min=1, max=300)
     public static int screamingGoatMaximumRamWaitTimeSeconds = 15;
+
+    @Entry(isSlider = true, min=0.0, max=1.0)
+    public static double boatMaxSlipperiness = 0.9;
 }

@@ -12,6 +12,7 @@
     "block.MudBlockMixin",
     "block.PointedDripstoneBlockMixin",
     "entity.AbstractSkeletonMixin",
+    "entity.BoatMixin",
     "entity.CreeperMixin",
     "entity.FoxMixin",
     "entity.GiantMixin",

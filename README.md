@@ -5,3 +5,5 @@ Credits:
 - Rotten flesh texture from https://www.curseforge.com/minecraft/mc-mods/fleshz by Globox_Z
 - Ocelot taming into cat code from https://github.com/Partonetrain/trains_tweaks by Partonetrain
 - Kristoffer Zetterstrand paintings https://zetterstrand.com/works/ adapted by https://www.youtube.com/@Mongster83 (https://www.reddit.com/r/GoldenAgeMinecraft/comments/1i5fnh0/i_made_a_bunch_of_new_paintings_based_off/)
+- Mob equipment drop removal code from https://github.com/Nostalgica-Reverie/Nostalgic-Tweaks by @Adrenix
+- Boat slipperiness cap code adapted from https://modrinth.com/mod/ice-boat-nerf by @supersaiyansubtlety
