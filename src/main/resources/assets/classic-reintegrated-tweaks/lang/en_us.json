@@ -65,5 +65,6 @@
   "classic-reintegrated-tweaks.midnightconfig.regularGoatMaximumRamWaitTimeSeconds": "Regular Goat Maximum Ram Wait Time in Seconds",
   "classic-reintegrated-tweaks.midnightconfig.screamingGoatMinimumRamWaitTimeSeconds": "Screaming Goat Minimum Ram Wait Time in Seconds",
   "classic-reintegrated-tweaks.midnightconfig.screamingGoatMaximumRamWaitTimeSeconds": "Screaming Goat Maximum Ram Wait Time in Seconds",
-  "classic-reintegrated-tweaks.midnightconfig.boatMaxSlipperiness": "Max Boat Slipperiness"
+  "classic-reintegrated-tweaks.midnightconfig.boatMaxSlipperiness": "Max Boat Slipperiness",
+  "classic-reintegrated-tweaks.midnightconfig.enderpearlTeleportDamage": "Enderpearl Teleport Damage"
 }

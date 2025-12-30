@@ -1,3 +1,13 @@
+## v0.27.0
+
+### Added
+
+- Disable endermite spawning from thrown enderpearl
+- Added config option to adjust enderpearl teleport damage
+- Disable eye of ender destruction after use
+
+---
+
 ## v0.26.0
 
 ### Added
