@@ -1,3 +1,12 @@
+## v0.28.0
+
+### Added
+
+- Added config option to disable giant icebergs from generating in the frozen ocean biome (not deep frozen ocean)
+- Added config options to adjust giant iceberg scaling variables which affect iceberg height
+
+---
+
 ## v0.27.0
 
 ### Added

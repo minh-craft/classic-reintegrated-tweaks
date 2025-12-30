@@ -38,7 +38,8 @@
     "nostalgic_tweaks_compat.LightingHelperMixin",
     "server.ServerLevelMixin",
     "world.EndDragonFightMixin",
-    "world.SpikeFeatureMixin"
+    "world.SpikeFeatureMixin",
+    "world.SurfaceSystemMixin"
   ],
   "injectors": {
     "defaultRequire": 1
