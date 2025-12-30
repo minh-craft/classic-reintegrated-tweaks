@@ -1,3 +1,11 @@
+## v0.28.1
+
+### Changed
+
+- Removed iceberg config options, hardcode disabling giant icebergs in frozen oceans and larger height scaling variables
+
+---
+
 ## v0.28.0
 
 ### Added

@@ -111,13 +111,4 @@ public class ModConfig extends MidnightConfig {
 
     @Entry(min=0.0F, max=5.0)
     public static float enderpearlTeleportDamage = 2.0F;
-
-    @Entry
-    public static boolean disableFrozenOceanGiantIceberg = true;
-
-    @Entry(isSlider = true, min=1.2, max=2.0, precision = 10)
-    public static double icebergScalingVariableOne = 1.2;
-
-    @Entry(isSlider = true, min=14.0, max=20.0, precision = 1)
-    public static double icebergScalingVariableTwo = 14.0;
 }

@@ -66,8 +66,5 @@
   "classic-reintegrated-tweaks.midnightconfig.screamingGoatMinimumRamWaitTimeSeconds": "Screaming Goat Minimum Ram Wait Time in Seconds",
   "classic-reintegrated-tweaks.midnightconfig.screamingGoatMaximumRamWaitTimeSeconds": "Screaming Goat Maximum Ram Wait Time in Seconds",
   "classic-reintegrated-tweaks.midnightconfig.boatMaxSlipperiness": "Max Boat Slipperiness",
-  "classic-reintegrated-tweaks.midnightconfig.enderpearlTeleportDamage": "Enderpearl Teleport Damage",
-  "classic-reintegrated-tweaks.midnightconfig.disableFrozenOceanGiantIceberg": "Disable Frozen Ocean Giant Iceberg",
-  "classic-reintegrated-tweaks.midnightconfig.icebergScalingVariableOne": "Iceberg Scaling Variable One",
-  "classic-reintegrated-tweaks.midnightconfig.icebergScalingVariableTwo": "Iceberg Scaling Variable Two"
+  "classic-reintegrated-tweaks.midnightconfig.enderpearlTeleportDamage": "Enderpearl Teleport Damage"
 }
