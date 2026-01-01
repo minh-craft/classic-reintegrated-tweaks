@@ -11,6 +11,7 @@
     "block.CauldronBlockMixin",
     "block.MudBlockMixin",
     "block.PointedDripstoneBlockMixin",
+    "block.TallGrassBlockMixin",
     "entity.AbstractSkeletonMixin",
     "entity.BoatMixin",
     "entity.CreeperMixin",

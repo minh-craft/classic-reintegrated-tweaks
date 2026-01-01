@@ -1,3 +1,11 @@
+## v0.29.0
+
+### Added
+
+- Bonemeal no longer turns short grass into tall grass
+
+---
+
 ## v0.28.1
 
 ### Changed
