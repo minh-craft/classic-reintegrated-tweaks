@@ -52,6 +52,7 @@
     "client.LightTextureMixin",
     "client.RecipeBookCategoriesAccessor",
     "client.RecipeBookCategoriesMixin",
+    "client.RecipeButtonMixin",
     "client.RecipeBookComponentMixin",
     "true_darkness_compat.DarknessMixin"
   ]
