@@ -9,6 +9,7 @@ import com.minhcraft.register.ModSounds;
 import eu.midnightdust.lib.config.MidnightConfig;
 import net.fabricmc.api.ModInitializer;
 
+import net.minecraft.client.RecipeBookCategories;
 import net.minecraft.resources.ResourceLocation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
