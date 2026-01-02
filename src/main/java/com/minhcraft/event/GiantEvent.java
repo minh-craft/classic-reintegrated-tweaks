@@ -1,6 +1,7 @@
 package com.minhcraft.event;
 
 import com.minhcraft.config.ModConfig;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.monster.Giant;
@@ -12,10 +13,15 @@ public class GiantEvent {
             return;
         }
 
-        if (!(entity instanceof Giant)) {
+        if (!(entity instanceof Giant giant)) {
             return;
         }
 
-        ((Giant)entity).getAttribute(Attributes.MAX_HEALTH).setBaseValue(ModConfig.giantMaxHealth);
+        if (level instanceof ServerLevel serverLevel && serverLevel.getMoonPhase() != 4) {
+            giant.discard();
+            return;
+        }
+
+        giant.getAttribute(Attributes.MAX_HEALTH).setBaseValue(ModConfig.giantMaxHealth);
     }
 }
