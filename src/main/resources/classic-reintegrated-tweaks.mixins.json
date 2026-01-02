@@ -38,6 +38,7 @@
     "item.SwordItemMixin",
     "nostalgic_tweaks_compat.LightingHelperMixin",
     "server.ServerLevelMixin",
+    "world.CanyonWorldCarverMixin",
     "world.EndDragonFightMixin",
     "world.SpikeFeatureMixin",
     "world.SurfaceSystemMixin"
