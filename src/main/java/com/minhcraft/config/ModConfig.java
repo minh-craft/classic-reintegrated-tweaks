@@ -111,4 +111,7 @@ public class ModConfig extends MidnightConfig {
 
     @Entry(min=0.0F, max=5.0)
     public static float enderpearlTeleportDamage = 2.0F;
+
+    @Entry
+    public static boolean crawlKeyTriggersSwimming = true;
 }
