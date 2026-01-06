@@ -111,4 +111,8 @@ public class ModConfig extends MidnightConfig {
 
     @Entry(min=0.0F, max=5.0)
     public static float enderpearlTeleportDamage = 2.0F;
+
+    @Entry(isSlider = true, min=1, max=20)
+    public static int ambientWaterMobCap = 10;
+
 }

@@ -1,3 +1,11 @@
+## v0.30.0
+
+### Added
+
+- Added a config value for configuring the mob cap for ambient water mob spawns
+
+---
+
 ## v0.29.0
 
 ### Added

@@ -22,6 +22,7 @@
     "entity.GoatMixin",
     "entity.HoglinMixin",
     "entity.HuskMixin",
+    "entity.MobCategoryMixin",
     "entity.MobMixin",
     "entity.OcelotMixin",
     "entity.SpiderAttackGoalMixin",
