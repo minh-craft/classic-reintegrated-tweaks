@@ -7,6 +7,12 @@ public class ModConfig extends MidnightConfig {
     @Entry(isSlider = true, min=20, max=200)
     public static int giantMaxHealth = 45;
 
+    @Entry(isSlider = true, min=0d, max=3d)
+    public static double giantSpeedModifier = 1.2;
+
+    @Entry(isSlider = true, min=0, max=50, precision = 1)
+    public static double giantAttackDamage = 8.0;
+
     @Entry(isSlider = true, min=0, max=20)
     public static int cakeMaxAbsorptionHearts = 8;
 

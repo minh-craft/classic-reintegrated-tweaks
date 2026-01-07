@@ -1,17 +1,33 @@
 package com.minhcraft.mixin.entity;
 
 import com.minhcraft.config.ModConfig;
+import com.minhcraft.entity.GiantAttackGoal;
 import com.minhcraft.register.ModSounds;
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.goal.*;
+import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
+import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
+import net.minecraft.world.entity.animal.IronGolem;
 import net.minecraft.world.entity.monster.Giant;
 import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.entity.monster.ZombifiedPiglin;
+import net.minecraft.world.entity.npc.AbstractVillager;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.state.BlockState;
+import org.jetbrains.annotations.NotNull;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Unique;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(Giant.class)
 public abstract class GiantMixin extends Monster {
@@ -26,7 +42,7 @@ public abstract class GiantMixin extends Monster {
     }
 
     @Override
-    protected SoundEvent getHurtSound(DamageSource damageSource) {
+    protected SoundEvent getHurtSound(@NotNull DamageSource damageSource) {
         return ModSounds.GIANT_HURT;
     }
 
@@ -35,12 +51,14 @@ public abstract class GiantMixin extends Monster {
         return ModSounds.GIANT_DEATH;
     }
 
+    @Unique
     protected SoundEvent getStepSound() {
         return SoundEvents.ZOMBIE_STEP;
     }
 
+    // Louder and lower step sound
     @Override
-    protected void playStepSound(BlockPos pos, BlockState state) {
+    protected void playStepSound(@NotNull BlockPos pos, @NotNull BlockState state) {
         this.playSound(this.getStepSound(), 1.2F, 0.65F);
     }
 
@@ -49,6 +67,24 @@ public abstract class GiantMixin extends Monster {
     @Override
     protected float getSoundVolume() {
         return 2.2F;
+    }
+
+    // Copied from zombie goals
+    protected void registerGoals() {
+        this.goalSelector.addGoal(8, new LookAtPlayerGoal(this, Player.class, 8.0F));
+        this.goalSelector.addGoal(8, new RandomLookAroundGoal(this));
+        this.addBehaviourGoals();
+    }
+
+    // Copied from zombie behavior goals
+    @Unique
+    protected void addBehaviourGoals() {
+        this.goalSelector.addGoal(2, new GiantAttackGoal((Giant)(Object) this, 1.0, false));
+        this.goalSelector.addGoal(7, new WaterAvoidingRandomStrollGoal(this, 1.0));
+        this.targetSelector.addGoal(1, new HurtByTargetGoal(this).setAlertOthers(ZombifiedPiglin.class));
+        this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, Player.class, true));
+        this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, AbstractVillager.class, false));
+        this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, IronGolem.class, true));
     }
 
     // Despawn the giant if it sees the sun
@@ -65,5 +101,31 @@ public abstract class GiantMixin extends Monster {
         }
 
         super.customServerAiStep();
+    }
+
+    // Set giant attributes
+    @Inject(
+            method = "createAttributes",
+            at = @At("HEAD"),
+            cancellable = true
+    )
+    private static void crt$overrideGiantAttributes(CallbackInfoReturnable<AttributeSupplier.Builder> cir) {
+        cir.setReturnValue(
+                Monster.createMonsterAttributes()
+                        .add(Attributes.MAX_HEALTH, ModConfig.giantMaxHealth)
+                        .add(Attributes.MOVEMENT_SPEED, 0.23 * ModConfig.giantSpeedModifier)
+                        .add(Attributes.ATTACK_DAMAGE, ModConfig.giantAttackDamage)
+                        .add(Attributes.FOLLOW_RANGE, 35.0)
+        );
+    }
+
+    // This condition was what was blocking giants from spawning under normal conditions, even if added to biome mob configuration
+    // Thanks to @flytre from the Fabric discord for discovering the fix and posting about it - https://discord.com/channels/507304429255393322/721100785936760876/798534491538063380
+    @Inject(
+            method = "getWalkTargetValue",
+            at = @At("HEAD"),
+            cancellable = true)
+    private void crt$allowGiantSpawn(BlockPos pos, LevelReader level, CallbackInfoReturnable<Float> cir) {
+        cir.setReturnValue(0.0F);
     }
 }

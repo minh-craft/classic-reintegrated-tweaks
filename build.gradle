@@ -71,10 +71,6 @@ dependencies {
 	// Mixin Squared
 	include(implementation(annotationProcessor("com.github.bawnorton.mixinsquared:mixinsquared-fabric:0.3.7-beta.1")))
 
-	// Giant Spawn
-	modImplementation "maven.modrinth:giant-spawn:$project.giant_spawn_version"
-	modImplementation "maven.modrinth:collective:$project.collective_version"
-
 	// Owo lib - True Darkness dependence
 	modImplementation("io.wispforest:owo-lib:$project.owo_lib_version")
 //	annotationProcessor("io.wispforest:owo-lib:$project.owo_lib_version")

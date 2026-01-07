@@ -1,3 +1,17 @@
+## v0.32.0
+
+### Added
+
+- Added giant ai and attributes based on zombie ai and attributes
+- Allow giants to spawn using normal biome mob placements
+  - Spawn conditions: new moon, and on the surface (not underground)
+
+### Removed
+
+- Remove https://github.com/Serilum/Giant-Spawn compat
+
+---
+
 ## v0.31.0
 
 ### contributed by [@Leclowndu93150](https://github.com/Leclowndu93150)
@@ -195,7 +209,7 @@
 
 ## v0.14.0
 
-contributed by PartoneTrain
+### Contributed by [@Partonetrain](https://github.com/Partonetrain/)
 
 ### Changed
 
