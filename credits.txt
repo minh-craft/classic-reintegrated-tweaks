@@ -4,3 +4,5 @@
 - Mob equipment drop removal code from https://github.com/Nostalgica-Reverie/Nostalgic-Tweaks by @Adrenix
 - Ambient water mob cap code adapted from https://github.com/Nostalgica-Reverie/Nostalgic-Tweaks by @Adrenix
 - Boat slipperiness cap code adapted from https://modrinth.com/mod/ice-boat-nerf by @supersaiyansubtlety
+- contributed by https://github.com/Leclowndu93150
+    - Make Fabrication crawl hotkey trigger swimming if underwater

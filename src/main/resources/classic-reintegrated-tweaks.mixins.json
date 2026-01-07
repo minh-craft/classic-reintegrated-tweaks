@@ -52,6 +52,7 @@
     "client.GameRendererMixin",
     "client.LightTextureMixin",
     "client.RecipeBookComponentMixin",
+    "fabrication_compat.LocalPlayerMixin",
     "true_darkness_compat.DarknessMixin"
   ]
 }
