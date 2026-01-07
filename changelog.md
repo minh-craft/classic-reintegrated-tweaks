@@ -1,3 +1,11 @@
+## v0.33.1
+
+### Changed
+
+- Move credits directly into README
+
+---
+
 ## v0.33.0
 
 ### Added
