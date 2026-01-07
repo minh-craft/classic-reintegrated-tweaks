@@ -39,6 +39,7 @@
     "item.SwordItemMixin",
     "nostalgic_tweaks_compat.LightingHelperMixin",
     "server.ServerLevelMixin",
+    "world.CanyonWorldCarverMixin",
     "world.EndDragonFightMixin",
     "world.SpikeFeatureMixin",
     "world.SurfaceSystemMixin"
@@ -51,6 +52,9 @@
     "client.ClientRecipeBookMixin",
     "client.GameRendererMixin",
     "client.LightTextureMixin",
+    "client.RecipeBookCategoriesAccessor",
+    "client.RecipeBookCategoriesMixin",
+    "client.RecipeButtonMixin",
     "client.RecipeBookComponentMixin",
     "true_darkness_compat.DarknessMixin"
   ]

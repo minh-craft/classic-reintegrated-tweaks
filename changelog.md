@@ -1,3 +1,15 @@
+## v0.31.0
+
+### contributed by [@Leclowndu93150](https://github.com/Leclowndu93150)
+
+### Added
+
+- Make ravines only spawn as waterlogged in areas where they are directly below water
+- Update recipe book icons
+- Updated recipe book to only scroll through craftable items in within a recipe group if at least one item is craftable
+
+---
+
 ## v0.30.0
 
 ### Added
