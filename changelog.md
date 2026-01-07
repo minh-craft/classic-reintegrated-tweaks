@@ -1,3 +1,17 @@
+## v0.33.0
+
+### Added
+
+- Disable shulker duplication when shot with a bullet to disable shulker farms
+  - Code taken from https://github.com/pajicadvance/misctweaks by @pajicadvance 
+
+### Changed
+
+- Update credits page format 
+- Embed credits directly into README
+
+---
+
 ## v0.32.0
 
 ### Added

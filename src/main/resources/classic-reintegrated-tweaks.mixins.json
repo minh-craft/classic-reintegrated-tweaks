@@ -25,6 +25,7 @@
     "entity.MobCategoryMixin",
     "entity.MobMixin",
     "entity.OcelotMixin",
+    "entity.ShulkerMixin",
     "entity.SpawnPlacementsMixin",
     "entity.SpiderAttackGoalMixin",
     "entity.StrayMixin",
@@ -54,8 +55,8 @@
     "client.LightTextureMixin",
     "client.RecipeBookCategoriesAccessor",
     "client.RecipeBookCategoriesMixin",
-    "client.RecipeButtonMixin",
     "client.RecipeBookComponentMixin",
+    "client.RecipeButtonMixin",
     "true_darkness_compat.DarknessMixin"
   ]
 }
