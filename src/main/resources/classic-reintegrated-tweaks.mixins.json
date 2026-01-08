@@ -26,6 +26,7 @@
     "entity.MobMixin",
     "entity.OcelotMixin",
     "entity.ShulkerMixin",
+    "entity.SilverfishMergeWithStoneGoalMixin",
     "entity.SpawnPlacementsMixin",
     "entity.SpiderAttackGoalMixin",
     "entity.StrayMixin",

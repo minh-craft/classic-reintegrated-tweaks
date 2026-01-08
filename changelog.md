@@ -1,3 +1,11 @@
+## v0.34.0
+
+### Added
+
+- Silverfish no longer infest into stone blocks
+
+---
+
 ## v0.33.1
 
 ### Changed
