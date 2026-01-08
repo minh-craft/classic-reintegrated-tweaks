@@ -11,6 +11,9 @@ See [changelog](changelog.md) for full list of features.
     - Make ravines only spawn as waterlogged in areas where they are directly below water
     - Update recipe book icons
     - Updated recipe book to only scroll through craftable items in within a recipe group if at least one item is craftable
+- Contributed by [@mahmudindev](https://github.com/mahmudindev)
+  - Added per-dimension monster mob cap configuration options
+
 
 ### Assets
 - Rotten flesh texture from https://www.curseforge.com/minecraft/mc-mods/fleshz by [@Globox_Z](https://github.com/Globox1997)

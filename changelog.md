@@ -1,3 +1,13 @@
+## v0.35.0
+
+### contributed by [@mahmudindev](https://github.com/mahmudindev)
+
+### Added
+
+- Added per-dimension monster mob cap configuration options
+
+---
+
 ## v0.34.0
 
 ### Added
