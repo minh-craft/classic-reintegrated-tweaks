@@ -121,4 +121,13 @@ public class ModConfig extends MidnightConfig {
     @Entry(isSlider = true, min=1, max=20)
     public static int ambientWaterMobCap = 10;
 
+    @Entry
+    public static int mopCapOverworld = 70;
+
+    @Entry
+    public static int mopCapNether = 70;
+
+    @Entry
+    public static int mopCapTheEnd = 70;
+
 }

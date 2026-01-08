@@ -43,6 +43,10 @@
     "server.ServerLevelMixin",
     "world.CanyonWorldCarverMixin",
     "world.EndDragonFightMixin",
+    "world.LocalMobCapCalculatorMixin",
+    "world.LocalMobCapCalculatorMobCountsMixin",
+    "world.NaturalSpawnerSpawnStateMixin",
+    "world.ServerChunkCacheMixin",
     "world.SpikeFeatureMixin",
     "world.SurfaceSystemMixin"
   ],
