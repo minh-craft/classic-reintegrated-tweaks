@@ -122,12 +122,12 @@ public class ModConfig extends MidnightConfig {
     public static int ambientWaterMobCap = 10;
 
     @Entry
-    public static int mopCapOverworld = 70;
+    public static int monsterMobCapOverworld = 70;
 
     @Entry
-    public static int mopCapNether = 70;
+    public static int monsterMobCapNether = 70;
 
     @Entry
-    public static int mopCapTheEnd = 70;
+    public static int monsterMobCapTheEnd = 70;
 
 }

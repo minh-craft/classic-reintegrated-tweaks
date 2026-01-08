@@ -32,6 +32,8 @@
   "item.classic-reintegrated-tweaks.rotten_leather.tooltip": "Requires smelting",
   "classic-reintegrated-tweaks.midnightconfig.title": "Classic Reintegrated Tweaks Config",
   "classic-reintegrated-tweaks.midnightconfig.giantMaxHealth": "Giant Max Health",
+  "classic-reintegrated-tweaks.midnightconfig.giantSpeedModifier": "Giant Speed Modifier",
+  "classic-reintegrated-tweaks.midnightconfig.giantAttackDamage": "Giant Attack Damage",
   "classic-reintegrated-tweaks.midnightconfig.cakeMaxAbsorptionHearts": "Cake Max Absorption Hearts",
   "classic-reintegrated-tweaks.midnightconfig.skeletonArrowVelocityDecrease": "Skeleton Arrow Velocity Decrease",
   "classic-reintegrated-tweaks.midnightconfig.spiderBoundingBoxAttackRangeIncrease": "Spider Bounding Box Attack Range Increase",
@@ -67,6 +69,9 @@
   "classic-reintegrated-tweaks.midnightconfig.screamingGoatMaximumRamWaitTimeSeconds": "Screaming Goat Maximum Ram Wait Time in Seconds",
   "classic-reintegrated-tweaks.midnightconfig.boatMaxSlipperiness": "Max Boat Slipperiness",
   "classic-reintegrated-tweaks.midnightconfig.enderpearlTeleportDamage": "Enderpearl Teleport Damage",
-  "classic-reintegrated-tweaks.midnightconfig.ambientWaterMobCap": "Ambient Water Mob Cap"
+  "classic-reintegrated-tweaks.midnightconfig.ambientWaterMobCap": "Ambient Water Mob Cap",
+  "classic-reintegrated-tweaks.midnightconfig.monsterMobCapOverworld": "Monster Mob Cap Overworld",
+  "classic-reintegrated-tweaks.midnightconfig.monsterMobCapNether": "Monster Mob Cap Nether",
+  "classic-reintegrated-tweaks.midnightconfig.monsterMobCapTheEnd": "Monster Mob Cap The End"
 
 }

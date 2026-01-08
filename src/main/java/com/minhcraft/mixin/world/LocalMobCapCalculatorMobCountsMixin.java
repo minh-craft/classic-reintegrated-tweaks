@@ -27,11 +27,11 @@ public abstract class LocalMobCapCalculatorMobCountsMixin implements ILocalMobCa
     private int canSpawnGetMaxInstancesPerChunk(MobCategory instance, Operation<Integer> original) {
         if (instance == MobCategory.MONSTER) {
             if (this.dimension == Level.OVERWORLD) {
-                return ModConfig.mopCapOverworld;
+                return ModConfig.monsterMobCapOverworld;
             } else if (this.dimension == Level.NETHER) {
-                return ModConfig.mopCapNether;
+                return ModConfig.monsterMobCapNether;
             } else if (this.dimension == Level.END) {
-                return ModConfig.mopCapTheEnd;
+                return ModConfig.monsterMobCapTheEnd;
             }
         }
 
